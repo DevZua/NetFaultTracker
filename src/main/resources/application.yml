@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/netfaulttracker?useSSL=false&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/netfaulttracker?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC
     username: ${DB_USERNAME}
     password: ${DB_PASSWORD}
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -16,15 +16,28 @@ spring:
     user:
       name: ${ADMIN_USERNAME}
       password: ${ADMIN_PASSWORD}
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
 
 server:
   port: 8080
+  servlet:
+    encoding:
+      charset: UTF-8
+      force: true
 
 logging:
   level:
     root: INFO
     com.netcoretech.netfaulttracker: DEBUG
     org.springframework.security: DEBUG
+  file:
+    name: logs/netfaulttracker.log
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
 
 management:
   endpoints:

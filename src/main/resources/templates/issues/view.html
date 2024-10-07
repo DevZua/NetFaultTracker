@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}" lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>이슈 상세 정보</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <h1>이슈 상세 정보</h1>
+    <div th:if="${issue}">
+        <p><strong>ID:</strong> <span th:text="${issue.id}"></span></p>
+        <p><strong>제목:</strong> <span th:text="${issue.title}"></span></p>
+        <p><strong>설명:</strong> <span th:text="${issue.description}"></span></p>
+        <p><strong>상태:</strong> <span th:text="${issue.status.koreanName}"></span></p>
+        <p><strong>우선순위:</strong> <span th:text="${issue.priority?.name}"></span></p>
+        <p><strong>심각도:</strong> <span th:text="${issue.severity?.name}"></span></p>
+        <p><strong>보고자:</strong> <span th:text="${issue.reportedBy?.username}"></span></p>
+        <p><strong>담당자:</strong> <span th:text="${issue.assignedTo?.username}"></span></p>
+        <p><strong>생성일:</strong> <span th:text="${#temporals.format(issue.createdAt, 'yyyy년 MM월 dd일 HH:mm')}"></span></p>
+        <p><strong>수정일:</strong> <span th:text="${issue.updatedAt ? #temporals.format(issue.updatedAt, 'yyyy년 MM월 dd일 HH:mm') : '수정되지 않음'}"></span></p>
+        <p><strong>해결일:</strong> <span th:text="${issue.resolvedAt ? #temporals.format(issue.resolvedAt, 'yyyy년 MM월 dd일 HH:mm') : '해결되지 않음'}"></span></p>
+    </div>
+    <div th:unless="${issue}">
+        <p>이슈를 찾을 수 없습니다.</p>
+    </div>
+    <a href="/issues" class="btn btn-secondary">목록으로 돌아가기</a>
+    <a th:if="${issue}" th:href="@{/issues/{id}/edit(id=${issue.id})}" class="btn btn-primary">수정</a>
+</div>
+</body>
+</html>

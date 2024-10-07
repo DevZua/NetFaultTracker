@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}" lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>검색 결과</title>
+</head>
+<body>
+<div layout:fragment="content" class="container mt-5">
+    <h1>검색 결과: <span th:text="${keyword}"></span></h1>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>제목</th>
+            <th>상태</th>
+            <th>작업</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="issue : ${issues}">
+            <td th:text="${issue.id}"></td>
+            <td th:text="${issue.title}"></td>
+            <td th:text="${issue.status.koreanName}"></td>
+            <td>
+                <a th:href="@{/issues/{id}(id=${issue.id})}" class="btn btn-primary btn-sm">상세보기</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <a href="/issues" class="btn btn-secondary">이슈 목록으로 돌아가기</a>
+</div>
+</body>
+</html>
