@@ -1,56 +1,61 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}" lang="ko">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title th:text="${issue.id} ? '이슈 수정' : '새 이슈 생성'"></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>새 이슈 생성</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-<div layout:fragment="content">
-    <h1 th:text="${issue.id} ? '이슈 수정' : '새 이슈 생성'"></h1>
-    <form th:action="${issue.id} ? @{/issues/{id}(id=${issue.id})} : @{/issues}" th:object="${issue}" method="post">
-        <input type="hidden" th:field="*{id}" />
+<div class="container mt-5">
+    <h1>새 이슈 생성</h1>
+    <form action="/issues" method="post">
+        <input type="hidden" name="id" />
 
         <div class="mb-3">
             <label for="title" class="form-label">제목:</label>
-            <input type="text" id="title" th:field="*{title}" class="form-control" required />
-            <span th:if="${#fields.hasErrors('title')}" th:errors="*{title}" class="text-danger"></span>
+            <input type="text" id="title" name="title" class="form-control" required />
         </div>
 
         <div class="mb-3">
             <label for="description" class="form-label">설명:</label>
-            <textarea id="description" th:field="*{description}" class="form-control"></textarea>
-            <span th:if="${#fields.hasErrors('description')}" th:errors="*{description}" class="text-danger"></span>
+            <textarea id="description" name="description" class="form-control"></textarea>
         </div>
 
         <div class="mb-3">
             <label for="status" class="form-label">상태:</label>
-            <select id="status" th:field="*{status}" class="form-select">
-                <option th:each="statusOpt : ${T(com.netcoretech.netfaulttracker.entity.Issue.Status).values()}"
-                        th:value="${statusOpt}" th:text="${statusOpt.koreanName}"></option>
+            <select id="status" name="status" class="form-select">
+                <option value="open">열림</option>
+                <option value="in_progress">진행 중</option>
+                <option value="closed">닫힘</option>
             </select>
         </div>
 
         <div class="mb-3">
             <label for="priority" class="form-label">우선순위:</label>
-            <select id="priority" th:field="*{priority}" class="form-select">
+            <select id="priority" name="priority" class="form-select">
                 <option value="">선택하세요</option>
-                <option th:each="priorityOpt : ${priorities}"
-                        th:value="${priorityOpt.id}" th:text="${priorityOpt.name}"></option>
+                <option value="low">낮음</option>
+                <option value="medium">중간</option>
+                <option value="high">높음</option>
             </select>
         </div>
 
         <div class="mb-3">
             <label for="severity" class="form-label">심각도:</label>
-            <select id="severity" th:field="*{severity}" class="form-select">
+            <select id="severity" name="severity" class="form-select">
                 <option value="">선택하세요</option>
-                <option th:each="severityOpt : ${severities}"
-                        th:value="${severityOpt.id}" th:text="${severityOpt.name}"></option>
+                <option value="minor">경미</option>
+                <option value="major">주요</option>
+                <option value="critical">치명적</option>
             </select>
         </div>
 
-        <button type="submit" class="btn btn-primary" th:text="${issue.id} ? '수정' : '생성'"></button>
+        <button type="submit" class="btn btn-primary">생성</button>
     </form>
     <a href="/issues" class="btn btn-secondary mt-3">목록으로 돌아가기</a>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

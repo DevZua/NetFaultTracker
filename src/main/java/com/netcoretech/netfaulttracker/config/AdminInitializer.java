@@ -32,10 +32,10 @@ public class AdminInitializer implements CommandLineRunner {
         if (!userService.existsByUsername(adminUsername)) {
             User adminUser = new User();
             adminUser.setUsername(adminUsername);
-            adminUser.setPassword(adminPassword); // 여기서는 평문 비밀번호 사용
+            adminUser.setPassword(passwordEncoder.encode(adminPassword)); // 비밀번호 인코딩
             adminUser.setEmail(adminEmail);
             adminUser.setRole("ADMIN");
-            userService.createUser(adminUser); // UserService에서 비밀번호 인코딩
+            userService.createUser(adminUser);
             System.out.println("관리자 계정을 생성했습니다.");
         }
     }
