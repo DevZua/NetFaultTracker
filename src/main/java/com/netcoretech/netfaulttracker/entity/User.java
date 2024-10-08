@@ -25,7 +25,7 @@ public class User implements UserDetails {
     private String password;
 
     @Column(nullable = false, unique = true)
-    private String email;  // 이 줄이 추가되었습니다.
+    private String email;
 
     @Column(nullable = false)
     private String role;
