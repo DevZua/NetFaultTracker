@@ -3396,3 +3396,79 @@ Consider defining a bean of type 'org.springframework.security.crypto.password.P
 2024-10-08 16:58:39 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-10-08 16:58:39 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2024-10-08 16:58:39 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-10-08 17:01:43 [restartedMain] INFO  c.n.n.NetFaultTrackerApplication - Starting NetFaultTrackerApplication using Java 21.0.4 with PID 18036 (C:\김주아\업무일지\NetFaultTracker\build\classes\java\main started by nct-sjh in C:\김주아\업무일지\NetFaultTracker)
+2024-10-08 17:01:43 [restartedMain] DEBUG c.n.n.NetFaultTrackerApplication - Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-10-08 17:01:43 [restartedMain] INFO  c.n.n.NetFaultTrackerApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-08 17:01:43 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-08 17:01:43 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-08 17:01:45 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-08 17:01:45 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 60 ms. Found 2 JPA repository interfaces.
+2024-10-08 17:01:46 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-10-08 17:01:46 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-08 17:01:46 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-08 17:01:47 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-08 17:01:47 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3268 ms
+2024-10-08 17:01:47 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-08 17:01:47 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-08 17:01:47 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-08 17:01:48 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-08 17:01:48 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-08 17:01:48 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2daf07b5
+2024-10-08 17:01:48 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-08 17:01:48 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-08 17:01:49 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-08 17:01:50 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-08 17:01:50 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-08 17:01:51 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-08 17:01:51 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userService
+2024-10-08 17:01:51 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2024-10-08 17:01:52 [restartedMain] DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-10-08 17:01:52 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-10-08 17:01:52 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-10-08 17:01:52 [restartedMain] INFO  c.n.n.NetFaultTrackerApplication - Started NetFaultTrackerApplication in 9.718 seconds (process running for 10.574)
+2024-10-08 17:01:53 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-08 17:01:53 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-10-08 17:01:53 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-10-08 17:01:53 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /
+2024-10-08 17:01:53 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /
+2024-10-08 17:01:53 [http-nio-8080-exec-1] INFO  c.n.n.controller.IssueController - Accessing home page
+2024-10-08 17:01:53 [http-nio-8080-exec-1] DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=User(id=2, username=admin, password=$2a$10$KAdavtHvp/3qUKLKMV.YjeGdwlErOq5Vie1HAOx9ftghGfRdqAiKu, email=gimzua0228@gmail.com, role=ADMIN), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=3D511BD6B28ADE053793D26CB4F045AE], Granted Authorities=[ROLE_ADMIN]]]
+2024-10-08 17:01:53 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /issues
+2024-10-08 17:01:53 [http-nio-8080-exec-2] DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=User(id=2, username=admin, password=$2a$10$KAdavtHvp/3qUKLKMV.YjeGdwlErOq5Vie1HAOx9ftghGfRdqAiKu, email=gimzua0228@gmail.com, role=ADMIN), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=3D511BD6B28ADE053793D26CB4F045AE], Granted Authorities=[ROLE_ADMIN]]]
+2024-10-08 17:01:53 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /issues
+2024-10-08 17:01:53 [http-nio-8080-exec-2] INFO  c.n.n.controller.IssueController - Accessing list issues page
+2024-10-08 17:01:53 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /favicon.ico
+2024-10-08 17:01:53 [http-nio-8080-exec-3] DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=User(id=2, username=admin, password=$2a$10$KAdavtHvp/3qUKLKMV.YjeGdwlErOq5Vie1HAOx9ftghGfRdqAiKu, email=gimzua0228@gmail.com, role=ADMIN), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=3D511BD6B28ADE053793D26CB4F045AE], Granted Authorities=[ROLE_ADMIN]]]
+2024-10-08 17:01:53 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /favicon.ico
+2024-10-08 17:01:53 [http-nio-8080-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-10-08 17:02:00 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /issues/new
+2024-10-08 17:02:00 [http-nio-8080-exec-4] DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=User(id=2, username=admin, password=$2a$10$KAdavtHvp/3qUKLKMV.YjeGdwlErOq5Vie1HAOx9ftghGfRdqAiKu, email=gimzua0228@gmail.com, role=ADMIN), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=3D511BD6B28ADE053793D26CB4F045AE], Granted Authorities=[ROLE_ADMIN]]]
+2024-10-08 17:02:00 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /issues/new
+2024-10-08 17:02:00 [http-nio-8080-exec-4] INFO  c.n.n.controller.IssueController - Accessing new issue form
+2024-10-08 17:02:00 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /favicon.ico
+2024-10-08 17:02:00 [http-nio-8080-exec-5] DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=User(id=2, username=admin, password=$2a$10$KAdavtHvp/3qUKLKMV.YjeGdwlErOq5Vie1HAOx9ftghGfRdqAiKu, email=gimzua0228@gmail.com, role=ADMIN), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=3D511BD6B28ADE053793D26CB4F045AE], Granted Authorities=[ROLE_ADMIN]]]
+2024-10-08 17:02:00 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /favicon.ico
+2024-10-08 17:02:00 [http-nio-8080-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-10-08 17:02:31 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /issues
+2024-10-08 17:02:31 [http-nio-8080-exec-6] DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=User(id=2, username=admin, password=$2a$10$KAdavtHvp/3qUKLKMV.YjeGdwlErOq5Vie1HAOx9ftghGfRdqAiKu, email=gimzua0228@gmail.com, role=ADMIN), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=3D511BD6B28ADE053793D26CB4F045AE], Granted Authorities=[ROLE_ADMIN]]]
+2024-10-08 17:02:31 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /issues
+2024-10-08 17:02:31 [http-nio-8080-exec-6] INFO  c.n.n.controller.IssueController - Accessing list issues page
+2024-10-08 17:02:31 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /favicon.ico
+2024-10-08 17:02:31 [http-nio-8080-exec-8] DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=User(id=2, username=admin, password=$2a$10$KAdavtHvp/3qUKLKMV.YjeGdwlErOq5Vie1HAOx9ftghGfRdqAiKu, email=gimzua0228@gmail.com, role=ADMIN), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=3D511BD6B28ADE053793D26CB4F045AE], Granted Authorities=[ROLE_ADMIN]]]
+2024-10-08 17:02:31 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /favicon.ico
+2024-10-08 17:02:31 [http-nio-8080-exec-8] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-10-08 17:04:47 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /
+2024-10-08 17:04:47 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /
+2024-10-08 17:04:47 [http-nio-8080-exec-1] INFO  c.n.n.controller.IssueController - Accessing home page
+2024-10-08 17:04:47 [http-nio-8080-exec-1] DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=User(id=2, username=admin, password=$2a$10$KAdavtHvp/3qUKLKMV.YjeGdwlErOq5Vie1HAOx9ftghGfRdqAiKu, email=gimzua0228@gmail.com, role=ADMIN), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=3D511BD6B28ADE053793D26CB4F045AE], Granted Authorities=[ROLE_ADMIN]]]
+2024-10-08 17:04:47 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /issues
+2024-10-08 17:04:47 [http-nio-8080-exec-2] DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=User(id=2, username=admin, password=$2a$10$KAdavtHvp/3qUKLKMV.YjeGdwlErOq5Vie1HAOx9ftghGfRdqAiKu, email=gimzua0228@gmail.com, role=ADMIN), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=3D511BD6B28ADE053793D26CB4F045AE], Granted Authorities=[ROLE_ADMIN]]]
+2024-10-08 17:04:47 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /issues
+2024-10-08 17:04:47 [http-nio-8080-exec-2] INFO  c.n.n.controller.IssueController - Accessing list issues page
+2024-10-08 17:04:48 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /favicon.ico
+2024-10-08 17:04:48 [http-nio-8080-exec-3] DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=User(id=2, username=admin, password=$2a$10$KAdavtHvp/3qUKLKMV.YjeGdwlErOq5Vie1HAOx9ftghGfRdqAiKu, email=gimzua0228@gmail.com, role=ADMIN), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=3D511BD6B28ADE053793D26CB4F045AE], Granted Authorities=[ROLE_ADMIN]]]
+2024-10-08 17:04:48 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /favicon.ico
+2024-10-08 17:04:48 [http-nio-8080-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-10-08 17:10:53 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-08 17:10:53 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-08 17:10:53 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

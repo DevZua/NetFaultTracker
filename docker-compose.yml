@@ -1,0 +1,36 @@
+version: '3'
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql_container
+    environment:
+      MYSQL_ROOT_PASSWORD: 220521
+      MYSQL_DATABASE: NetworkTracker
+      MYSQL_USER: user
+      MYSQL_PASSWORD: sjs220521
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - app-network
+
+  java_app:
+    image: openjdk:21
+    container_name: java_app_container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mysql
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  mysql_data:
