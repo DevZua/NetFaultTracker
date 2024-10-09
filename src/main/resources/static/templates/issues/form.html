@@ -3,18 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Issue Form</title>
-    <link rel="stylesheet" href="/css/style.css"> <!-- 필요한 경우 CSS 링크 추가 -->
+    <title>이슈 폼</title> <!-- 'Issue Form'을 '이슈 폼'으로 변경 -->
+    <link rel="stylesheet" href="/css/style.css"> <!-- CSS 링크 -->
     <script src="/js/router.js"></script> <!-- JS 파일 포함 -->
 </head>
 <body>
-<h1>Create/Edit Issue</h1>
-<form id="issueForm">
-    <input type="hidden" name="id" id="issueId">
-    <input type="text" name="title" placeholder="Title" required>
-    <textarea name="description" placeholder="Description" required></textarea>
-    <button type="submit">Save Issue</button>
-</form>
-<a href="/issues/list">Back to Issue List</a>
+<header>
+    <h1>NetFaultTracker</h1>
+</header>
+<main>
+    <div class="content">
+        <h2>이슈 생성/수정</h2> <!-- 'Create/Edit Issue'을 '이슈 생성/수정'으로 변경 -->
+        <form id="issueForm">
+            <input type="hidden" name="id" id="issueId">
+            <input type="text" name="title" placeholder="제목" required> <!-- 'Title'을 '제목'으로 변경 -->
+            <textarea name="description" placeholder="설명" required></textarea> <!-- 'Description'을 '설명'으로 변경 -->
+            <button type="submit">이슈 저장</button> <!-- 'Save Issue'을 '이슈 저장'으로 변경 -->
+        </form>
+        <a href="/issues/list" class="back-link">이슈 목록으로 돌아가기</a> <!-- 'Back to Issue List'을 '이슈 목록으로 돌아가기'로 변경 -->
+    </div>
+</main>
+<footer>
+    <p>© 2024 NCT ZUA</p>
+</footer>
 </body>
 </html>

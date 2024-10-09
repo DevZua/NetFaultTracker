@@ -3,15 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index Page</title>
-    <link rel="stylesheet" href="/css/style.css"> <!-- 필요한 경우 CSS 링크 추가 -->
+    <title>인덱스 페이지</title> <!-- 'Index Page'을 '인덱스 페이지'로 변경 -->
+    <link rel="stylesheet" href="/css/style.css"> <!-- CSS 링크 -->
     <script src="/js/router.js"></script> <!-- JS 파일 포함 -->
 </head>
 <body>
-<h1>Welcome to the Issue Tracker</h1>
-<nav>
-    <a href="/issues/list">View Issues</a>
-    <a href="/login">Login</a>
-</nav>
+<header>
+    <h1>NetFaultTracker</h1>
+</header>
+<main>
+    <div class="content">
+        <h2>이슈를 쉽게 찾고 추적하세요</h2> <!-- 'Find and Track Your Issues Easily'을 '이슈를 쉽게 찾고 추적하세요'로 변경 -->
+        <p>우리의 이슈 트래커는 모든 프로젝트 이슈를 한 곳에서 관리하고 추적할 수 있도록 도와줍니다.</p> <!-- 'Our issue tracker...'를 한국어로 번역 -->
+        <p>현재 이슈를 확인하거나 프로젝트를 관리하기 위해 로그인하여 시작하세요.</p> <!-- 'Get started...'를 한국어로 번역 -->
+        <br>
+        <nav>
+            <a href="/issues/list">보기</a> <!-- 'View'을 '보기'로 변경 -->
+            <a href="/issues">이슈</a> <!-- 'Issues'을 '이슈'로 변경 -->
+            <a href="/login">로그인</a> <!-- 'Login'을 '로그인'으로 변경 -->
+        </nav>
+    </div>
+</main>
+<footer>
+    <p>© 2024 NCT ZUA</p>
+</footer>
 </body>
 </html>
