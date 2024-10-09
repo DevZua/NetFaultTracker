@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Page</title>
+    <link rel="stylesheet" href="/css/style.css"> <!-- 필요한 경우 CSS 링크 추가 -->
+    <script src="/js/router.js"></script> <!-- JS 파일 포함 -->
+</head>
+<body>
+<header>
+    <h1>Issue Tracker</h1>
+    <nav>
+        <a href="/index">Home</a>
+        <a href="/issues/list">Issues</a>
+        <a href="/login">Login</a>
+    </nav>
+</header>
+<main>
+    <!-- 각 페이지의 콘텐츠가 여기서 삽입됨 -->
+    <div th:replace="${page}"></div>
+</main>
+<footer>
+    <p>&copy; 2024 Issue Tracker</p>
+</footer>
+</body>
+</html>
