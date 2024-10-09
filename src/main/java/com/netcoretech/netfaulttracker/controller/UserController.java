@@ -1,5 +1,6 @@
 package com.netcoretech.netfaulttracker.controller;
 
+import com.netcoretech.netfaulttracker.dto.UserRegistrationDto;
 import com.netcoretech.netfaulttracker.entity.User;
 import com.netcoretech.netfaulttracker.service.UserService;
 import io.swagger.v3.oas.annotations.Operation;
@@ -27,6 +28,11 @@ public class UserController {
         return "login";
     }
 
+    @GetMapping("/register")
+    public String register() {
+        return "register";
+    }
+
     @GetMapping("/api/v1/users")
     @ResponseBody
     @Operation(summary = "Get all users", description = "Retrieves a list of all users")
@@ -46,8 +52,13 @@ public class UserController {
     @PostMapping("/api/v1/users")
     @ResponseBody
     @Operation(summary = "Create a new user", description = "Creates a new user")
-    public User createUser(@RequestBody User user) {
-        return userService.createUser(user);
+    public ResponseEntity<?> createUser(@RequestBody UserRegistrationDto registrationDto) {
+        try {
+            User user = userService.createUser(registrationDto);
+            return ResponseEntity.ok(user);
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
     }
 
     @PutMapping("/api/v1/users/{id}")

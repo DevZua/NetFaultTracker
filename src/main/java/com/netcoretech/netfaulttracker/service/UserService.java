@@ -1,5 +1,6 @@
 package com.netcoretech.netfaulttracker.service;
 
+import com.netcoretech.netfaulttracker.dto.UserRegistrationDto;
 import com.netcoretech.netfaulttracker.entity.User;
 import com.netcoretech.netfaulttracker.repository.UserRepository;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -28,8 +29,19 @@ public class UserService implements UserDetailsService {
                 .orElseThrow(() -> new UsernameNotFoundException("사용자를 찾을 수 없습니다: " + username));
     }
 
-    public User createUser(User user) {
-        user.setPassword(passwordEncoder.encode(user.getPassword()));
+    public User createUser(UserRegistrationDto registrationDto) {
+        if (userRepository.existsByUsername(registrationDto.getUsername())) {
+            throw new RuntimeException("이미 존재하는 사용자 이름입니다.");
+        }
+        if (userRepository.existsByEmail(registrationDto.getEmail())) {
+            throw new RuntimeException("이미 존재하는 이메일입니다.");
+        }
+
+        User user = new User();
+        user.setUsername(registrationDto.getUsername());
+        user.setEmail(registrationDto.getEmail());
+        user.setPassword(passwordEncoder.encode(registrationDto.getPassword()));
+
         return userRepository.save(user);
     }
 

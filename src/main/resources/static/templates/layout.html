@@ -3,97 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>레이아웃 페이지</title> <!-- 'Layout Page'을 '레이아웃 페이지'로 변경 -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Bootstrap CSS 링크 -->
-    <script src="/js/router.js"></script> <!-- JavaScript 파일 포함 -->
+    <title>레이아웃 페이지</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="/static/js/router.js"></script>
 
     <style>
         body {
-            background-color: #e9f5ff; /* 부드러운 하늘색 배경 */
-            margin: 0; /* 기본 여백 제거 */
-            padding: 0; /* 기본 패딩 제거 */
-            height: 100vh; /* 전체 높이 */
-            display: flex; /* flexbox 사용 */
-            flex-direction: column; /* 세로 방향 정렬 */
+            background-color: #e9f5ff;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
         header {
-            background-color: #6cb2eb; /* 부드러운 헤더 배경 색상 */
-            padding: 10px 0; /* 패딩 추가 */
+            background-color: #6cb2eb;
+            padding: 10px 0;
         }
         header h1 {
-            color: white; /* 제목 색상 */
-            text-align: center; /* 중앙 정렬 */
-            margin: 0; /* 여백 제거 */
+            color: white;
+            text-align: center;
+            margin: 0;
         }
         nav {
-            text-align: center; /* 중앙 정렬 */
-            margin-top: 10px; /* 여백 추가 */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 10px;
+            width: 100%;
         }
         nav a {
-            color: white; /* 링크 색상 */
-            margin: 0 10px; /* 링크 간격 줄이기 */
-            text-decoration: none; /* 밑줄 제거 */
-            position: relative; /* 위치 지정 */
-            padding: 5px 0; /* 패딩 추가 */
+            color: white;
+            text-decoration: none;
+            padding: 5px 0;
+            flex: 1;
+            text-align: center;
         }
-        nav a:not(:last-child)::after {
-            content: ""; /* 하얀 선 추가 */
-            position: absolute;
-            right: -10px; /* 선 위치 조정 */
-            top: 50%; /* 수직 중앙 정렬 */
-            transform: translateY(-50%); /* 수직 중앙 정렬 보정 */
-            height: 20px; /* 선의 높이 */
-            width: 1px; /* 선의 너비 */
-            background-color: white; /* 선 색상 */
+        nav a:not(:last-child) {
+            border-right: 1px solid white;
         }
         nav a:hover {
-            text-decoration: underline; /* 호버 시 밑줄 추가 */
+            text-decoration: underline;
         }
         footer {
-            text-align: center; /* 중앙 정렬 */
-            padding: 10px 0; /* 패딩 추가 */
-            background-color: #e9f5ff; /* 부드러운 푸터 배경 색상 */
-            color: black; /* 푸터 텍스트 색상 */
+            text-align: center;
+            padding: 10px 0;
+            background-color: #e9f5ff;
+            color: black;
             position: relative;
             bottom: 0;
-            width: 100%; /* 전체 너비 */
-            margin-top: auto; /* 여백 추가 */
+            width: 100%;
+            margin-top: auto;
         }
         footer p {
-            margin: 0; /* 여백 제거 */
+            margin: 0;
         }
         main {
-            padding: 20px; /* 콘텐츠 여백 */
-            flex: 1; /* 남은 공간을 채우도록 설정 */
-            display: flex; /* flexbox 사용 */
-            flex-direction: column; /* 세로 방향 정렬 */
-            align-items: center; /* 중앙 정렬 */
-            justify-content: center; /* 중앙 정렬 */
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
         .content {
-            width: 100%; /* 콘텐츠 전체 너비 */
-            max-width: 800px; /* 최대 너비 설정 */
-            margin: 0 auto; /* 중앙 정렬 */
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
         }
     </style>
 </head>
 <body>
 <header>
-    <h1>NetFaultTracker</h1> <!-- 제목 수정 -->
+    <h1>NetFaultTracker</h1>
     <nav>
-        <a href="/index">홈</a> <!-- 'Home'을 '홈'으로 변경 -->
-        <a href="/issues/list">이슈</a> <!-- 'Issues'을 '이슈'로 변경 -->
-        <a href="/login">로그인</a> <!-- 'Login'을 '로그인'으로 변경 -->
+        <a href="/static/templates/index.html">홈</a>
+        <a href="/static/templates/issues/list.html">이슈</a>
+        <a href="/static/templates/login.html">로그인</a>
     </nav>
 </header>
 <main>
     <div class="content">
         <!-- 각 페이지의 콘텐츠가 여기서 삽입됨 -->
-        <div th:replace="${page}"></div>
+        <div id="page-content"></div>
     </div>
 </main>
 <footer>
-    <p>&copy; 2024 NCT ZUA</p> <!-- 푸터 내용 수정 -->
+    <p>© 2024 NCT ZUA</p>
 </footer>
 
 <!-- Bootstrap JS, Popper.js, and jQuery -->

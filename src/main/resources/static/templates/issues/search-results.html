@@ -5,45 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>검색 결과</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="/js/router.js"></script>
-
     <style>
+        /* 기존 스타일 유지 */
         body {
-            background-color: #f0f8ff; /* 구름색깔 배경 (하늘색) */
-            display: flex; /* 플렉스 박스 사용 */
-            flex-direction: column; /* 세로 방향 정렬 */
-            min-height: 100vh; /* 최소 높이를 100vh로 설정 */
-            margin: 0; /* 기본 마진 제거 */
+            background-color: #f0f8ff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
         }
         header {
-            text-align: center; /* 중앙 정렬 */
-            padding: 20px 0; /* 패딩 추가 */
+            text-align: center;
+            padding: 20px 0;
         }
         footer {
-            text-align: center; /* 중앙 정렬 */
-            padding: 10px 0; /* 패딩 추가 */
-            margin-top: auto; /* 푸터를 하단으로 이동 */
+            text-align: center;
+            padding: 10px 0;
+            margin-top: auto;
         }
         h2 {
-            font-size: 24px; /* 제목 크기 조정 */
-            text-align: center; /* 중앙 정렬 */
-            margin-bottom: 20px; /* 테이블과의 공간 추가 */
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
         }
         table {
-            margin: 0 auto; /* 테이블 중앙 정렬 */
+            margin: 0 auto;
         }
         th, td {
-            text-align: center; /* 셀 내용 중앙 정렬 */
+            text-align: center;
         }
         .text-center {
-            margin-bottom: 20px; /* 버튼과 푸터 사이의 여백 추가 */
+            margin-bottom: 20px;
         }
         .btn-custom {
-            background-color: #87CEEB; /* 하늘색 버튼 색상 */
-            color: white; /* 글자색 하얀색 */
+            background-color: #87CEEB;
+            color: white;
         }
         .btn-custom:hover {
-            background-color: #00BFFF; /* 호버 시 색상 변경 */
+            background-color: #00BFFF;
         }
     </style>
 </head>
@@ -69,7 +68,7 @@
         </table>
     </div>
     <div class="text-center">
-        <a href="/issues" class="btn btn-custom">이슈 목록으로 돌아가기</a>
+        <a href="#" class="btn btn-custom" id="backToList">이슈 목록으로 돌아가기</a>
     </div>
 </main>
 <footer>
@@ -80,6 +79,50 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="/js/search-results.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const keyword = urlParams.get('keyword');
+
+        if (keyword) {
+            fetch(`/api/issues?keyword=${encodeURIComponent(keyword)}`)
+                .then(response => response.json())
+                .then(data => {
+                    const tableBody = document.getElementById('searchResultsTableBody');
+                    data.content.forEach(issue => {
+                        const row = `
+                            <tr>
+                                <td>${issue.title}</td>
+                                <td>${issue.status}</td>
+                                <td><a href="form.html?id=${issue.id}" class="btn btn-sm btn-primary">수정</a></td>
+                                <td><button onclick="deleteIssue(${issue.id})" class="btn btn-sm btn-danger">삭제</button></td>
+                            </tr>
+                        `;
+                        tableBody.innerHTML += row;
+                    });
+                })
+                .catch(error => console.error('Error:', error));
+        }
+    });
+
+    function deleteIssue(id) {
+        if (confirm('이 이슈를 삭제하시겠습니까?')) {
+            fetch(`/api/issues/${id}`, { method: 'DELETE' })
+                .then(response => {
+                    if (response.ok) {
+                        location.reload();
+                    } else {
+                        throw new Error('삭제에 실패했습니다.');
+                    }
+                })
+                .catch(error => console.error('Error:', error));
+        }
+    }
+
+    document.getElementById('backToList').addEventListener('click', function(e) {
+        e.preventDefault();
+        window.location.href = 'list.html';
+    });
+</script>
 </body>
 </html>
