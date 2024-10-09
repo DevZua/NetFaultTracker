@@ -3,17 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>이슈 목록</title> <!-- 'Issue List'을 '이슈 목록'으로 변경 -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Bootstrap CSS 링크 -->
-    <script src="/js/router.js"></script> <!-- JavaScript 파일 포함 -->
+    <title>이슈 목록</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="/js/router.js"></script>
 
     <style>
         body {
-            background-color: #f0f8ff; /* 구름색깔 배경 (하늘색) */
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* 부드러운 배경색 (하늘색) */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            color: black; /* 검은색으로 변경 */
+            padding: 20px;
+            text-align: center; /* 중앙 정렬 */
+        }
+        header h1 {
+            margin: 0;
+            color: black; /* 검은색으로 변경 */
+        }
+        main {
+            padding: 20px;
+            text-align: center; /* 중앙 정렬 */
+        }
+        h2 {
+            font-size: 24px; /* 이슈 목록 제목의 글자 크기를 줄임 */
+        }
+        .table-responsive {
+            margin: 20px auto; /* 가운데 정렬 */
+            max-width: 800px; /* 최대 폭을 800px로 조정 */
         }
         footer {
+            color: black; /* 검은색 텍스트 */
             text-align: center; /* 중앙 정렬 */
-            padding: 10px 0; /* 패딩 추가 */
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            background-color: transparent; /* 배경색 제거 */
         }
     </style>
 </head>
@@ -22,15 +50,15 @@
     <h1>NetFaultTracker</h1>
 </header>
 <main class="container">
-    <h2>이슈 목록</h2> <!-- 'Issue List'을 '이슈 목록'으로 변경 -->
+    <h2>이슈 목록</h2>
     <div class="table-responsive">
         <table class="table table-striped">
             <thead>
             <tr>
-                <th>제목</th> <!-- 'Title'을 '제목'으로 변경 -->
-                <th>상태</th> <!-- 'Status'을 '상태'로 변경 -->
-                <th>수정</th> <!-- 'Edit'을 '수정'으로 변경 -->
-                <th>삭제</th> <!-- 'Delete'을 '삭제'로 변경 -->
+                <th>제목</th>
+                <th>상태</th>
+                <th>수정</th>
+                <th>삭제</th>
             </tr>
             </thead>
             <tbody id="issueTableBody">
@@ -39,11 +67,11 @@
         </table>
     </div>
     <div class="text-center">
-        <a href="/issues/create" class="btn btn-primary">새 이슈 생성</a> <!-- 'Create New Issue'을 '새 이슈 생성'으로 변경 -->
+        <a href="/issues/create" class="btn btn-primary">새 이슈 생성</a>
     </div>
 </main>
 <footer>
-    <p>© 2024 NCT ZUA</p> <!-- 푸터 내용 수정 -->
+    <p>© 2024 NCT ZUA</p>
 </footer>
 
 <!-- Bootstrap JS, Popper.js, and jQuery -->
