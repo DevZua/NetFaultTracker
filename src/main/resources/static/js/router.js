@@ -1,53 +1,23 @@
-const router = {
-    routes: {
-        '/': { title: 'Home', file: 'index.html' },
-        '/index.html': { title: 'Home', file: 'index.html' },
-        '/list': { title: '이슈 목록', file: 'list.html' },
-        '/list.html': { title: '이슈 목록', file: 'list.html' },
-        '/form': { title: '새 이슈 등록', file: 'form.html' },
-        '/form.html': { title: '새 이슈 등록', file: 'form.html' },
-        '/view': { title: '이슈 상세 보기', file: 'view.html' },
-        '/view.html': { title: '이슈 상세 보기', file: 'view.html' },
-        '/search': { title: '검색 결과', file: 'search-results.html' },
-        '/search-results.html': { title: '검색 결과', file: 'search-results.html' }
-    },
-    navigate: function(path) {
-        console.log('Navigating to:', path);
-        const route = this.routes[path] || this.routes['/'];
-        document.title = `${route.title} - NetFaultTracker`;
-        fetch(route.file)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('HTTP error ' + response.status);
-                }
-                return response.text();
-            })
-            .then(html => {
-                console.log('Loaded HTML:', html.substring(0, 100) + '...');
-                document.getElementById('content').innerHTML = html;
-                history.pushState(null, '', path);
-            })
-            .catch(error => {
-                console.error('Error loading page:', error);
-                document.getElementById('content').innerHTML = '<p>Error loading page. Please try again.</p>';
-            });
-    }
-};
+document.addEventListener('DOMContentLoaded', function () {
+    const issueLinks = document.querySelectorAll('.issue-link');
 
-document.addEventListener('DOMContentLoaded', function() {
-    document.body.addEventListener('click', function(e) {
-        if (e.target.tagName === 'A') {
+    issueLinks.forEach(link => {
+        link.addEventListener('click', function (e) {
             e.preventDefault();
-            const href = e.target.getAttribute('href');
-            console.log('Clicked link:', href);
-            router.navigate(href);
-        }
-    });
+            const issueId = this.getAttribute('data-id');
 
-    window.addEventListener('popstate', function() {
-        router.navigate(window.location.pathname);
+            fetch(`/issues/api/${issueId}`)
+                .then(response => response.json())
+                .then(data => {
+                    document.querySelector('#issue-details').innerHTML = `
+                        <h2>ID: ${data.id}</h2>
+                        <p><strong>Title:</strong> ${data.title}</p>
+                        <p><strong>Description:</strong> ${data.description}</p>
+                        <p><strong>Status:</strong> ${data.status}</p>
+                        <p><strong>Created At:</strong> ${data.createdAt}</p>
+                    `;
+                })
+                .catch(error => console.error('Error:', error));
+        });
     });
-
-    // 초기 페이지 로드
-    router.navigate(window.location.pathname);
 });
