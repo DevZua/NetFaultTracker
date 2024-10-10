@@ -23,6 +23,8 @@ dependencies {
 
     // Spring Boot Starter Security (보안 관련)
     implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.springframework.security:spring-security-core'
+    implementation 'org.springframework.security:spring-security-crypto'
 
     // Spring Boot Starter Web (웹 애플리케이션 개발)
     implementation 'org.springframework.boot:spring-boot-starter-web'

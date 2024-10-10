@@ -21,48 +21,31 @@ public class IssueController {
         this.issueService = issueService;
     }
 
-    @GetMapping
+    @GetMapping("/list")
     public String listIssues(Model model) {
-        return "issues/list";
+        return "list.html";  // 이슈 목록 페이지
     }
 
     @GetMapping("/new")
     public String newIssueForm(Model model) {
-        model.addAttribute("issue", new Issue());
-        return "issues/form";  // form.html로 이동
+        return "redirect:/form.html";  // 정적 리소스로 이동
     }
+
 
     @GetMapping("/edit")
     public String editIssueForm(@RequestParam Long id, Model model) {
         issueService.getIssueById(id).ifPresent(issue -> model.addAttribute("issue", issue));
-        return "issues/form";
+        return "form.html";  // 이슈 수정 페이지
     }
 
-    @GetMapping("/api")
-    @ResponseBody
-    public ResponseEntity<Page<Issue>> getIssues(Pageable pageable, @RequestParam(required = false) String keyword) {
-        Page<Issue> issues = (keyword != null && !keyword.isEmpty())
-                ? issueService.searchIssues(keyword, pageable)
-                : issueService.getAllIssues(pageable);
-        return ResponseEntity.ok(issues);
-    }
-
-    @GetMapping("/api/{id}")
-    @ResponseBody
-    public ResponseEntity<Issue> getIssue(@PathVariable Long id) {
-        return issueService.getIssueById(id)
-                .map(ResponseEntity::ok)
-                .orElse(ResponseEntity.notFound().build());
-    }
-
-    @PostMapping("/api")
+    @PostMapping("/api/issues")
     @ResponseBody
     public ResponseEntity<Issue> createIssue(@RequestBody Issue issue) {
         Issue createdIssue = issueService.createIssue(issue);
         return ResponseEntity.ok(createdIssue);
     }
 
-    @PutMapping("/api/{id}")
+    @PutMapping("/api/issues/{id}")
     @ResponseBody
     public ResponseEntity<Issue> updateIssue(@PathVariable Long id, @RequestBody Issue issue) {
         return issueService.getIssueById(id)
@@ -74,7 +57,7 @@ public class IssueController {
                 .orElse(ResponseEntity.notFound().build());
     }
 
-    @DeleteMapping("/api/{id}")
+    @DeleteMapping("/api/issues/{id}")
     @ResponseBody
     public ResponseEntity<Void> deleteIssue(@PathVariable Long id) {
         return issueService.getIssueById(id)

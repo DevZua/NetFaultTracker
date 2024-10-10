@@ -16,13 +16,9 @@ spring:
     hiddenmethod:
       filter:
         enabled: true
-
-  thymeleaf:
-    prefix: classpath:/static/templates/  # 템플릿 파일의 경로를 명시적으로 지정
-    suffix: .html  # 파일 확장자는 .html
-    cache: false  # 개발 중에는 캐시를 비활성화
-
-
+  web:
+    resources:
+      static-locations: classpath:/static/
 server:
   port: 8080
   servlet:
@@ -54,5 +50,3 @@ netfaulttracker:
   default-page-size: 20
   max-page-size: 100
   admin:
-
-
