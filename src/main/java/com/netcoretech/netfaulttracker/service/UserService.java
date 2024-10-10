@@ -3,12 +3,14 @@ package com.netcoretech.netfaulttracker.service;
 import com.netcoretech.netfaulttracker.dto.UserRegistrationDto;
 import com.netcoretech.netfaulttracker.entity.User;
 import com.netcoretech.netfaulttracker.repository.UserRepository;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
@@ -25,8 +27,14 @@ public class UserService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        return userRepository.findByUsername(username)
+        User user = userRepository.findByUsername(username)
                 .orElseThrow(() -> new UsernameNotFoundException("사용자를 찾을 수 없습니다: " + username));
+
+        return new org.springframework.security.core.userdetails.User(
+                user.getUsername(),
+                user.getPassword(),
+                Collections.singletonList(new SimpleGrantedAuthority("ROLE_USER"))
+        );
     }
 
     public User createUser(UserRegistrationDto registrationDto) {
@@ -44,6 +52,7 @@ public class UserService implements UserDetailsService {
 
         return userRepository.save(user);
     }
+
 
     public List<User> getAllUsers() {
         return userRepository.findAll();
@@ -72,7 +81,12 @@ public class UserService implements UserDetailsService {
         userRepository.deleteById(id);
     }
 
-    public boolean existsByUsername(String username) {
-        return userRepository.existsByUsername(username);
+    public boolean authenticate(String username, String password) {
+        Optional<User> userOptional = userRepository.findByUsername(username);
+        if (userOptional.isPresent()) {
+            User user = userOptional.get();
+            return passwordEncoder.matches(password, user.getPassword());
+        }
+        return false;
     }
 }

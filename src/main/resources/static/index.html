@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인덱스 페이지</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        body {
+            background-color: #f0f8ff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #f0f8ff;
+            color: black;
+        }
+        main {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content {
+            text-align: center;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #00BFFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #1E90FF;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f0f8ff;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>NetFaultTracker</h1>
+</header>
+<main>
+    <div class="content">
+        <h2>이슈 검색 및 추적</h2>
+        <p>NetFaulttracker는 모든 프로젝트 이슈를 한 곳에서 관리하고 추적하는 게시판</p>
+        <br>
+        <nav>
+            <a href="/list.html">이슈 목록</a>
+            <a href="/form.html">이슈 생성</a>
+            <a href="/login.html">로그인</a>
+        </nav>
+    </div>
+</main>
+<footer>
+    <p>Copyright © 2024 NetCoreTech</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃 페이지</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="/static/js/router.js"></script>
+
+    <style>
+        body {
+            background-color: #e9f5ff;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background-color: #6cb2eb;
+            padding: 10px 0;
+        }
+        header h1 {
+            color: white;
+            text-align: center;
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 10px;
+            width: 100%;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 0;
+            flex: 1;
+            text-align: center;
+        }
+        nav a:not(:last-child) {
+            border-right: 1px solid white;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #e9f5ff;
+            color: black;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: auto;
+        }
+        footer p {
+            margin: 0;
+        }
+        main {
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .content {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>NetFaultTracker</h1>
+    <nav>
+        <a href="/index.html">홈</a>
+        <a href="/templates/issues/list.html">이슈</a>
+        <a href="/login.html">로그인</a>
+    </nav>
+</header>
+<main>
+    <div class="content">
+        <!-- 각 페이지의 콘텐츠가 여기서 삽입됨 -->
+        <div id="page-content"></div>
+    </div>
+</main>
+<footer>
+    <p>© 2024 NCT ZUA</p>
+</footer>
+
+<!-- Bootstrap JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

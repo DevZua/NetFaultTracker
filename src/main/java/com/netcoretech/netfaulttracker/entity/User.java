@@ -28,7 +28,7 @@ public class User implements UserDetails {
     private String email;
 
     @Column(nullable = false)
-    private String role;
+    private String role = "USER";  // 기본 역할 설정
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

@@ -116,7 +116,7 @@
             .then(data => {
                 console.log('Success:', data);
                 alert('이슈가 성공적으로 저장되었습니다.');
-                window.location.href = '/static/templates/issues/list.html';
+                window.location.href = '../issues/list.html';
             })
             .catch((error) => {
                 console.error('Error:', error);
@@ -126,7 +126,7 @@
 
     document.getElementById('backToList').addEventListener('click', function(e) {
         e.preventDefault();
-        window.location.href = '/static/templates/issues/list.html';
+        window.location.href = '../issues/list.html';
     });
 
     function loadIssueData() {

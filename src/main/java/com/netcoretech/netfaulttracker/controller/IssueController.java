@@ -29,7 +29,7 @@ public class IssueController {
     @GetMapping("/new")
     public String newIssueForm(Model model) {
         model.addAttribute("issue", new Issue());
-        return "issues/form";
+        return "issues/form";  // form.html로 이동
     }
 
     @GetMapping("/edit")
