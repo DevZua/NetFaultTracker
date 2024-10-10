@@ -56,6 +56,10 @@
         .btn-custom:hover {
             background-color: #5F9EA0;
         }
+
+        .form-footer {
+            text-align: right; /* 오른쪽 정렬 */
+        }
     </style>
 </head>
 <body>
@@ -83,7 +87,9 @@
                 <label for="description">설명</label>
                 <textarea id="description" class="form-control" rows="3" required></textarea>
             </div>
-            <button type="submit" class="btn btn-custom">수정</button>
+            <div class="form-footer">
+                <button type="submit" class="btn btn-custom">수정</button>
+            </div>
         </form>
     </div>
 </main>

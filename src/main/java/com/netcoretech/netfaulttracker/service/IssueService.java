@@ -2,7 +2,9 @@ package com.netcoretech.netfaulttracker.service;
 
 import com.netcoretech.netfaulttracker.entity.Issue;
 import com.netcoretech.netfaulttracker.repository.IssueRepository;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -11,10 +13,12 @@ import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
+
 @Service
 public class IssueService {
 
     private final IssueRepository issueRepository;
+    private Logger logger;
 
     @Autowired
     public IssueService(IssueRepository issueRepository) {
@@ -40,8 +44,13 @@ public class IssueService {
     }
 
     public void deleteIssue(Long id) {
-        issueRepository.deleteById(id);
+        try {
+            issueRepository.deleteById(id);  // 존재 여부에 상관없이 삭제 시도
+        } catch (EmptyResultDataAccessException e) {
+            throw new EmptyResultDataAccessException("삭제할 이슈가 존재하지 않습니다. ID: " + id, 1);
+        }
     }
+
 
     public Page<Issue> searchIssues(String keyword, Pageable pageable) {
         // 검색 결과를 최신순으로 정렬

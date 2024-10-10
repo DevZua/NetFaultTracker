@@ -5,8 +5,10 @@ import com.netcoretech.netfaulttracker.service.IssueService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -74,19 +76,23 @@ public class IssueController {
         }
     }
 
+
     @DeleteMapping("/{id}")
-    @ResponseBody
     public ResponseEntity<Void> deleteIssueById(@PathVariable Long id) {
         logger.info("ID '{}'인 이슈 삭제 요청을 받았습니다.", id);
 
-        Optional<Issue> issue = issueService.getIssueById(id);
-        if (issue.isPresent()) {
-            issueService.deleteIssue(id);  // ID로 삭제
+        try {
+            issueService.deleteIssue(id);  // ID를 찾아서 삭제 시도
             logger.info("이슈가 성공적으로 삭제되었습니다: {}", id);
-            return ResponseEntity.ok().build();
-        } else {
-            logger.info("ID '{}'에 해당하는 이슈를 찾을 수 없습니다.", id);
-            return ResponseEntity.notFound().build();
+            return ResponseEntity.ok().build();  // 성공 시 200 응답
+        } catch (EmptyResultDataAccessException e) {
+            logger.warn("ID '{}'에 해당하는 이슈가 존재하지 않아 삭제할 수 없습니다.", id);
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();  // 404 에러 반환
+        } catch (Exception e) {
+            logger.error("이슈 삭제 중 오류가 발생했습니다: {}", e.getMessage());
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build(); // 기타 에러 처리
         }
     }
+
+
 }
