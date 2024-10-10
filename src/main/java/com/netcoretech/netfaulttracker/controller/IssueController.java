@@ -44,6 +44,15 @@ public class IssueController {
         });
     }
 
+    @PostMapping
+    @ResponseBody
+    public ResponseEntity<Issue> createIssue(@RequestBody Issue newIssue) {
+        logger.info("새로운 이슈 생성 요청을 받았습니다: {}", newIssue.getTitle());
+        Issue createdIssue = issueService.createIssue(newIssue);
+        logger.info("이슈가 성공적으로 생성되었습니다: {}", createdIssue);
+        return ResponseEntity.ok(createdIssue);
+    }
+
     @PutMapping("/{id}")
     @ResponseBody
     public ResponseEntity<Issue> updateIssueById(@PathVariable Long id, @RequestBody Issue updatedIssue) {
@@ -52,7 +61,6 @@ public class IssueController {
         Optional<Issue> existingIssue = issueService.getIssueById(id);
         if (existingIssue.isPresent()) {
             Issue issue = existingIssue.get();
-            // 수정할 내용을 반영
             issue.setTitle(updatedIssue.getTitle());
             issue.setStatus(updatedIssue.getStatus());
             issue.setDescription(updatedIssue.getDescription());
@@ -73,7 +81,7 @@ public class IssueController {
 
         Optional<Issue> issue = issueService.getIssueById(id);
         if (issue.isPresent()) {
-            issueService.deleteIssue(issue.get().getId());
+            issueService.deleteIssue(id);  // ID로 삭제
             logger.info("이슈가 성공적으로 삭제되었습니다: {}", id);
             return ResponseEntity.ok().build();
         } else {
