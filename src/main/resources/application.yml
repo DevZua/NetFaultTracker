@@ -16,9 +16,6 @@ spring:
     hiddenmethod:
       filter:
         enabled: true
-  thymeleaf:
-    prefix: classpath:/templates/
-    suffix: .html
 
 server:
   port: 8080

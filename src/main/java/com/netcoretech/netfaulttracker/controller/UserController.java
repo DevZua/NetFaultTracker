@@ -25,12 +25,12 @@ public class UserController {
 
     @GetMapping("/login")
     public String login() {
-        return "login.html";
+        return "login.html";  // login.html 파일을 반환
     }
 
     @GetMapping("/register")
     public String register() {
-        return "register.html";
+        return "register.html";  // register.html 파일을 반환
     }
 
     @GetMapping("/api/v1/users")
