@@ -12,13 +12,16 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.MySQLDialect
         format_sql: true
+        use_sql_comments: true
   mvc:
-    hiddenmethod:
-      filter:
-        enabled: true
+    view:
+      prefix: /
+      suffix: .html
   web:
     resources:
       static-locations: classpath:/static/
+
+
 server:
   port: 8080
   servlet:
@@ -31,6 +34,10 @@ logging:
     root: INFO
     com.netcoretech.netfaulttracker: DEBUG
     org.springframework.security: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql: TRACE
+    org.springframework.orm.jpa: DEBUG
+    org.springframework.transaction: DEBUG
   file:
     name: logs/netfaulttracker.log
   pattern:
@@ -50,3 +57,4 @@ netfaulttracker:
   default-page-size: 20
   max-page-size: 100
   admin:
+  # 여기에 관리자 관련 설정을 추가할 수 있습니다

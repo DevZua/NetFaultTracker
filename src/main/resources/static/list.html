@@ -16,32 +16,74 @@
         header {
             text-align: center;
             padding: 20px 0;
+            background-color: #f0f8ff;
+            color: black;
         }
         footer {
             text-align: center;
             padding: 10px 0;
             margin-top: auto;
+            background-color: #f0f8ff;
+            color: black;
+        }
+        .content {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 40px auto;
+            max-width: 800px;
+            width: 90%;
         }
         h2 {
             font-size: 24px;
             text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        .issue-list {
+            margin-bottom: 30px;
+        }
+        .issue-item {
+            padding: 15px;
+            background-color: #f9f9f9;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+        .issue-item:hover {
+            background-color: #e0f7fa;
+        }
+        .issue-actions {
+            margin-top: 10px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 10px;
+        }
+        .btn-warning {
+            margin-right: 10px;
+        }
+        .btn-create {
             margin-bottom: 20px;
-        }
-        table {
-            margin: 0 auto;
-        }
-        th, td {
-            text-align: center;
-        }
-        .text-center {
-            margin-bottom: 20px;
-        }
-        .btn-custom {
             background-color: #87CEEB;
             color: white;
         }
-        .btn-custom:hover {
-            background-color: #00BFFF;
+        .btn-create:hover {
+            background-color: #5F9EA0;
+        }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .page-item {
+            padding: 10px;
+            cursor: pointer;
+        }
+        .page-item:hover {
+            background-color: #e0f7fa;
         }
     </style>
 </head>
@@ -50,24 +92,18 @@
     <h1>NetFaultTracker</h1>
 </header>
 <main class="container">
-    <h2>이슈 목록</h2>
-    <div class="table-responsive">
-        <table class="table table-striped">
-            <thead>
-            <tr>
-                <th>제목</th>
-                <th>상태</th>
-                <th>수정</th>
-                <th>삭제</th>
-            </tr>
-            </thead>
-            <tbody id="issueTableBody">
-            <!-- 이슈 목록 -->
-            </tbody>
-        </table>
-    </div>
-    <div class="text-center">
-        <a href="/issues/new" class="btn btn-custom">새 이슈 생성</a>
+    <div class="content">
+        <h2>이슈 목록</h2>
+
+        <!-- 글 생성 버튼 -->
+        <div class="text-right">
+            <a href="form.html" class="btn btn-create">이슈 생성</a>
+        </div>
+
+        <div class="issue-list" id="issueList"></div>
+
+        <!-- 페이지네이션 -->
+        <div class="pagination" id="pagination"></div>
     </div>
 </main>
 <footer>
@@ -75,46 +111,104 @@
 </footer>
 
 <script>
-    function loadIssues() {
-        fetch('/api/issues')
-            .then(response => response.json())
-            .then(data => {
-                const tableBody = document.getElementById('issueTableBody');
-                tableBody.innerHTML = '';
-                data.content.forEach(issue => {
-                    const row = `
-                        <tr>
-                            <td>${issue.title}</td>
-                            <td>${issue.status}</td>
-                            <td><button onclick="editIssue(${issue.id})" class="btn btn-sm btn-primary">수정</button></td>
-                            <td><button onclick="deleteIssue(${issue.id})" class="btn btn-sm btn-danger">삭제</button></td>
-                        </tr>
-                    `;
-                    tableBody.innerHTML += row;
-                });
+    let currentPage = 1;
+    const pageSize = 5;  // 페이지당 표시할 이슈 수
+
+    function loadIssues(page) {
+        currentPage = page || 1;
+
+        fetch(`/api/issues?page=${currentPage}&size=${pageSize}`)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('네트워크 응답에 문제가 있습니다: ' + response.statusText);
+                }
+                return response.json();
             })
-            .catch(error => console.error('Error:', error));
+            .then(issues => {
+                console.log('이슈 목록:', issues);
+                const issueList = document.getElementById('issueList');
+                const pagination = document.getElementById('pagination');
+
+                // 이슈 목록 비우기
+                issueList.innerHTML = '';
+                pagination.innerHTML = '';
+
+                if (issues.content.length === 0) {
+                    issueList.innerHTML = "<p>등록된 이슈가 없습니다.</p>";
+                } else {
+                    // 순번 계산: 페이지에 따른 순번
+                    let issueIndex = (currentPage - 1) * pageSize + 1;
+
+                    issues.content.forEach(issue => {
+                        const issueItem = document.createElement('div');
+                        issueItem.classList.add('issue-item');
+                        issueItem.innerHTML = `
+                            <strong>순번:</strong> ${issueIndex++} <br>
+                            <strong>제목:</strong> ${issue.title} <br>
+                            <strong>상태:</strong> ${issue.status} <br>
+                            <div class="issue-actions">
+                                <button class="btn btn-warning" onclick="editIssue(${issue.id})">수정</button>
+                                <button class="btn btn-danger" onclick="deleteIssue(${issue.id})">삭제</button>
+                            </div>
+                        `;
+
+                        // 클릭 시 이슈 상세 페이지로 이동
+                        issueItem.addEventListener('click', function(event) {
+                            if (!event.target.classList.contains('btn')) {
+                                window.location.href = `view.html?id=${issue.id}`;
+                            }
+                        });
+
+                        issueList.appendChild(issueItem);
+                    });
+
+                    // 페이지네이션 렌더링
+                    for (let i = 1; i <= issues.totalPages; i++) {
+                        const pageItem = document.createElement('div');
+                        pageItem.classList.add('page-item');
+                        pageItem.textContent = i;
+                        if (i === currentPage) {
+                            pageItem.style.fontWeight = 'bold';
+                        }
+                        pageItem.addEventListener('click', () => loadIssues(i));
+                        pagination.appendChild(pageItem);
+                    }
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('이슈 목록을 불러오는데 실패했습니다.');
+            });
     }
 
     function editIssue(id) {
-        window.location.href = `/issues/edit?id=${id}`;
+        window.location.href = `form.html?id=${id}`;
     }
 
     function deleteIssue(id) {
-        if (confirm('이 이슈를 삭제하시겠습니까?')) {
-            fetch(`/api/issues/${id}`, { method: 'DELETE' })
+        if (confirm('정말로 삭제하시겠습니까?')) {
+            fetch(`/api/issues/${id}`, {
+                method: 'DELETE'
+            })
                 .then(response => {
                     if (response.ok) {
-                        loadIssues();
+                        alert('이슈가 삭제되었습니다.');
+                        loadIssues(currentPage);
                     } else {
-                        throw new Error('삭제에 실패했습니다.');
+                        alert('이슈 삭제에 실패했습니다.');
                     }
                 })
-                .catch(error => console.error('Error:', error));
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('이슈 삭제 중 오류가 발생했습니다.');
+                });
         }
     }
 
-    window.addEventListener('load', loadIssues);
+    // 페이지 로드 시 이슈 목록 불러오기
+    document.addEventListener('DOMContentLoaded', function() {
+        loadIssues(currentPage);
+    });
 </script>
 </body>
 </html>
