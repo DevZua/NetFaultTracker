@@ -15,15 +15,19 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
-                .authorizeHttpRequests((requests) -> requests
-                        .requestMatchers("/", "/home", "/login", "/register").permitAll()
+                .authorizeHttpRequests(requests -> requests
+                        .requestMatchers("/", "/index.html", "/login", "/register", "/css/**", "/js/**", "/api/**").permitAll()
                         .anyRequest().authenticated()
                 )
-                .formLogin((form) -> form
+                .formLogin(form -> form
                         .loginPage("/login")
+                        .defaultSuccessUrl("/index.html", true)
                         .permitAll()
                 )
-                .logout((logout) -> logout.permitAll());
+                .logout(logout -> logout
+                        .logoutSuccessUrl("/")
+                        .permitAll()
+                );
 
         return http.build();
     }

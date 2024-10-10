@@ -94,7 +94,8 @@
 <main>
     <div class="content">
         <h2 class="text-center">로그인</h2>
-        <form id="loginForm">
+        <form id="loginForm" action="/perform_login" method="post">
+            <input type="hidden" id="csrfToken" name="_csrf" value="">
             <div class="form-group">
                 <label for="username">사용자 이름</label>
                 <input type="text" class="form-control" id="username" name="username" required>
@@ -106,7 +107,7 @@
             <button type="submit" class="btn btn-custom">로그인</button>
         </form>
         <div class="text-center mt-3">
-            <a class="btn btn-custom" href="/static/templates/register.html">계정 등록</a>
+            <a class="btn btn-custom" href="/register">계정 등록</a>
         </div>
     </div>
 </main>
@@ -116,4 +117,28 @@
 
 <!-- Bootstrap JS, Popper.js, and jQuery -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/co
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    // CSRF 토큰 가져오기
+    function getCsrfToken() {
+        const cookies = document.cookie.split(';');
+        for (let cookie of cookies) {
+            const [name, value] = cookie.trim().split('=');
+            if (name === 'XSRF-TOKEN') {
+                return decodeURIComponent(value);
+            }
+        }
+        return null;
+    }
+
+    // 폼 제출 전 CSRF 토큰 설정
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+        const csrfToken = getCsrfToken();
+        if (csrfToken) {
+            document.getElementById('csrfToken').value = csrfToken;
+        }
+    });
+</script>
+</body>
+</html>

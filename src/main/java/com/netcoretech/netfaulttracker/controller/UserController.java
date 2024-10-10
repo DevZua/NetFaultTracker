@@ -25,12 +25,12 @@ public class UserController {
 
     @GetMapping("/login")
     public String login() {
-        return "login";
+        return "login.html";
     }
 
     @GetMapping("/register")
     public String register() {
-        return "register";
+        return "register.html";
     }
 
     @GetMapping("/api/v1/users")
@@ -52,23 +52,18 @@ public class UserController {
     @PostMapping("/api/v1/users")
     @ResponseBody
     @Operation(summary = "Create a new user", description = "Creates a new user")
-    public ResponseEntity<?> createUser(@RequestBody UserRegistrationDto registrationDto) {
-        try {
-            User user = userService.createUser(registrationDto);
-            return ResponseEntity.ok(user);
-        } catch (Exception e) {
-            return ResponseEntity.badRequest().body(e.getMessage());
-        }
+    public User createUser(@RequestBody UserRegistrationDto userDto) {
+        return userService.createUser(userDto);
     }
 
     @PutMapping("/api/v1/users/{id}")
     @ResponseBody
     @Operation(summary = "Update a user", description = "Updates an existing user")
-    public ResponseEntity<User> updateUser(@PathVariable Long id, @RequestBody User user) {
+    public ResponseEntity<User> updateUser(@PathVariable Long id, @RequestBody UserRegistrationDto userDto) {
         return userService.getUserById(id)
                 .map(existingUser -> {
-                    user.setId(id);
-                    return ResponseEntity.ok(userService.updateUser(user));
+                    User updatedUser = userService.updateUser(userDto);
+                    return ResponseEntity.ok(updatedUser);
                 })
                 .orElse(ResponseEntity.notFound().build());
     }

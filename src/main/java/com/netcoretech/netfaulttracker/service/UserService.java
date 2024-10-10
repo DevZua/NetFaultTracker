@@ -53,14 +53,22 @@ public class UserService implements UserDetailsService {
         return userRepository.findById(id);
     }
 
-    public User updateUser(User user) {
-        if (user.getPassword() != null && !user.getPassword().isEmpty()) {
-            user.setPassword(passwordEncoder.encode(user.getPassword()));
+    public User updateUser(UserRegistrationDto userDto) {
+        User user = userRepository.findByUsername(userDto.getUsername())
+                .orElseThrow(() -> new RuntimeException("사용자를 찾을 수 없습니다."));
+
+        user.setEmail(userDto.getEmail());
+        if (userDto.getPassword() != null && !userDto.getPassword().isEmpty()) {
+            user.setPassword(passwordEncoder.encode(userDto.getPassword()));
         }
+
         return userRepository.save(user);
     }
 
     public void deleteUser(Long id) {
+        if (!userRepository.existsById(id)) {
+            throw new RuntimeException("사용자를 찾을 수 없습니다.");
+        }
         userRepository.deleteById(id);
     }
 

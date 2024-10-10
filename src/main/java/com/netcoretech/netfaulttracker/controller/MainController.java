@@ -8,21 +8,21 @@ public class MainController {
 
     @GetMapping(value = {"/", "/index", "/index.html"})
     public String index() {
-        return "index";
+        return "index.html";
     }
 
     @GetMapping(value = {"/list", "/list.html"})
     public String list() {
-        return "list";
+        return "list.html";
     }
 
     @GetMapping(value = {"/form", "/form.html"})
     public String form() {
-        return "form";
+        return "form.html";
     }
 
     @GetMapping(value = {"/view", "/view.html"})
     public String view() {
-        return "view";
+        return "view.html";
     }
 }
