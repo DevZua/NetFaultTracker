@@ -21,8 +21,8 @@ public class IssueService {
         this.issueRepository = issueRepository;
     }
 
-    // 최신 순으로 페이지네이션된 이슈 목록 가져오기
     public Page<Issue> getAllIssues(Pageable pageable) {
+        // 최신순 정렬
         Pageable sortedByCreatedAtDesc = PageRequest.of(pageable.getPageNumber(), pageable.getPageSize(), Sort.by("createdAt").descending());
         return issueRepository.findAll(sortedByCreatedAtDesc);
     }
@@ -43,9 +43,13 @@ public class IssueService {
         issueRepository.deleteById(id);
     }
 
-    // 최신 순으로 검색된 이슈 목록 가져오기
     public Page<Issue> searchIssues(String keyword, Pageable pageable) {
+        // 검색 결과를 최신순으로 정렬
         Pageable sortedByCreatedAtDesc = PageRequest.of(pageable.getPageNumber(), pageable.getPageSize(), Sort.by("createdAt").descending());
         return issueRepository.searchIssues(keyword, sortedByCreatedAtDesc);
+    }
+
+    public Optional<Issue> findByTitle(String title) {
+        return issueRepository.findByTitle(title);
     }
 }

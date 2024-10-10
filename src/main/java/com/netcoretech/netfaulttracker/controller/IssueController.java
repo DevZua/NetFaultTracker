@@ -7,10 +7,11 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.Optional;
 
 @Controller
 @RequestMapping("/api/issues")
@@ -27,94 +28,57 @@ public class IssueController {
     @GetMapping
     @ResponseBody
     public ResponseEntity<Page<Issue>> getAllIssues(Pageable pageable) {
-        logger.info("Received GET request to /api/issues");
+        logger.info("이슈 목록 조회 요청을 받았습니다.");
         Page<Issue> issues = issueService.getAllIssues(pageable);
         return ResponseEntity.ok(issues);
-    }
-
-    @GetMapping("/list")
-    public String listIssues() {
-        return "list";  // list.html을 반환
-    }
-
-    @GetMapping("/new")
-    public String newIssueForm() {
-        return "form";
-    }
-
-    @GetMapping("/edit")
-    public String editIssueForm() {
-        return "form";
     }
 
     @GetMapping("/{id}")
     @ResponseBody
     public ResponseEntity<Issue> getIssueById(@PathVariable Long id) {
-        logger.info("Received GET request to /api/issues/{}", id);
-        return issueService.getIssueById(id)
-                .map(ResponseEntity::ok)
-                .orElse(ResponseEntity.notFound().build());
-    }
-
-    @PostMapping
-    @ResponseBody
-    public ResponseEntity<?> createIssue(@RequestBody Issue issue) {
-        logger.info("Received POST request to /api/issues");
-        logger.debug("Request body: {}", issue);
-        try {
-            if (issue.getTitle() == null || issue.getTitle().trim().isEmpty()) {
-                throw new IllegalArgumentException("제목은 필수 입력 항목입니다.");
-            }
-            if (issue.getStatus() == null) {
-                throw new IllegalArgumentException("상태는 필수 입력 항목입니다.");
-            }
-
-            Issue createdIssue = issueService.createIssue(issue);
-            logger.info("Issue created successfully: {}", createdIssue);
-            return ResponseEntity.ok(createdIssue);
-        } catch (IllegalArgumentException e) {
-            logger.error("Validation error while creating issue: {}", e.getMessage());
-            return ResponseEntity.badRequest().body(e.getMessage());
-        } catch (Exception e) {
-            logger.error("Unexpected error while creating issue", e);
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
-                    .body("이슈 저장 중 오류가 발생했습니다: " + e.getMessage());
-        }
+        logger.info("ID가 {}인 이슈 조회 요청을 받았습니다.", id);
+        Optional<Issue> issue = issueService.getIssueById(id);
+        return issue.map(ResponseEntity::ok).orElseGet(() -> {
+            logger.info("ID '{}'에 해당하는 이슈를 찾을 수 없습니다.", id);
+            return ResponseEntity.notFound().build();
+        });
     }
 
     @PutMapping("/{id}")
     @ResponseBody
-    public ResponseEntity<Issue> updateIssue(@PathVariable Long id, @RequestBody Issue issue) {
-        logger.info("Received PUT request to /api/issues/{}", id);
-        logger.debug("Request body: {}", issue);
-        return issueService.getIssueById(id)
-                .map(existingIssue -> {
-                    issue.setId(id);
-                    Issue updatedIssue = issueService.updateIssue(issue);
-                    logger.info("Issue updated successfully: {}", updatedIssue);
-                    return ResponseEntity.ok(updatedIssue);
-                })
-                .orElse(ResponseEntity.notFound().build());
+    public ResponseEntity<Issue> updateIssueById(@PathVariable Long id, @RequestBody Issue updatedIssue) {
+        logger.info("ID '{}'으로 이슈 수정 요청을 받았습니다.", id);
+
+        Optional<Issue> existingIssue = issueService.getIssueById(id);
+        if (existingIssue.isPresent()) {
+            Issue issue = existingIssue.get();
+            // 수정할 내용을 반영
+            issue.setTitle(updatedIssue.getTitle());
+            issue.setStatus(updatedIssue.getStatus());
+            issue.setDescription(updatedIssue.getDescription());
+
+            Issue savedIssue = issueService.updateIssue(issue);
+            logger.info("이슈가 성공적으로 수정되었습니다: {}", savedIssue);
+            return ResponseEntity.ok(savedIssue);
+        } else {
+            logger.info("ID '{}'에 해당하는 이슈를 찾을 수 없습니다.", id);
+            return ResponseEntity.notFound().build();
+        }
     }
 
     @DeleteMapping("/{id}")
     @ResponseBody
-    public ResponseEntity<Void> deleteIssue(@PathVariable Long id) {
-        logger.info("Received DELETE request to /api/issues/{}", id);
-        return issueService.getIssueById(id)
-                .map(issue -> {
-                    issueService.deleteIssue(id);
-                    logger.info("Issue deleted successfully: {}", id);
-                    return ResponseEntity.ok().<Void>build();
-                })
-                .orElse(ResponseEntity.notFound().build());
-    }
+    public ResponseEntity<Void> deleteIssueById(@PathVariable Long id) {
+        logger.info("ID '{}'인 이슈 삭제 요청을 받았습니다.", id);
 
-    @GetMapping("/search")
-    @ResponseBody
-    public ResponseEntity<Page<Issue>> searchIssues(@RequestParam String keyword, Pageable pageable) {
-        logger.info("Received GET request to /api/issues/search with keyword: {}", keyword);
-        Page<Issue> issues = issueService.searchIssues(keyword, pageable);
-        return ResponseEntity.ok(issues);
+        Optional<Issue> issue = issueService.getIssueById(id);
+        if (issue.isPresent()) {
+            issueService.deleteIssue(issue.get().getId());
+            logger.info("이슈가 성공적으로 삭제되었습니다: {}", id);
+            return ResponseEntity.ok().build();
+        } else {
+            logger.info("ID '{}'에 해당하는 이슈를 찾을 수 없습니다.", id);
+            return ResponseEntity.notFound().build();
+        }
     }
 }
