@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>이슈 수정</title>
+    <title>이슈 내역</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
@@ -58,7 +58,7 @@
         }
 
         .form-footer {
-            text-align: right; /* 오른쪽 정렬 */
+            text-align: right;
         }
     </style>
 </head>
@@ -68,7 +68,7 @@
 </header>
 <main class="container">
     <div class="content">
-        <h2>이슈 수정</h2>
+        <h2>이슈 내역</h2>
         <form id="issueForm">
             <div class="form-group">
                 <label for="title">제목</label>
@@ -88,7 +88,7 @@
                 <textarea id="description" class="form-control" rows="3" required></textarea>
             </div>
             <div class="form-footer">
-                <button type="submit" class="btn btn-custom">수정</button>
+                <button type="submit" class="btn btn-custom">목록</button>
             </div>
         </form>
     </div>
@@ -100,7 +100,7 @@
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         const params = new URLSearchParams(window.location.search);
-        const id = params.get('id'); // id를 URL에서 가져옴
+        const id = params.get('id');
 
         fetch(`/api/issues/${id}`)
             .then(response => response.json())
@@ -111,7 +111,6 @@
             })
             .catch(error => {
                 console.error('Error:', error);
-                alert('이슈 데이터를 불러오는데 실패했습니다.');
             });
 
         document.getElementById('issueForm').addEventListener('submit', function (e) {
@@ -130,10 +129,7 @@
                 body: JSON.stringify(updatedIssue)
             }).then(response => {
                 if (response.ok) {
-                    alert('이슈가 성공적으로 수정되었습니다.');
                     window.location.href = 'list.html';
-                } else {
-                    alert('이슈 수정에 실패했습니다.');
                 }
             });
         });
