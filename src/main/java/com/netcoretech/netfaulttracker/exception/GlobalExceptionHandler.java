@@ -14,6 +14,7 @@ public class GlobalExceptionHandler {
         return "error";
     }
 
+    // 404 오류 발생 시, 페이지를 찾을 수 없다는 메시지를 에러 페이지로 전달.
     @ExceptionHandler(NoHandlerFoundException.class)
     public String handleNotFound(NoHandlerFoundException e, Model model) {
         model.addAttribute("error", "요청하신 페이지를 찾을 수 없습니다.");
