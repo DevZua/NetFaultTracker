@@ -44044,3 +44044,3001 @@ Consider defining a bean of type 'org.springframework.security.crypto.password.P
 2024-10-11 14:13:25 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-10-11 14:13:25 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2024-10-11 14:13:25 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-10-11 14:18:24 [restartedMain] INFO  c.n.n.NetFaultTrackerApplication - Starting NetFaultTrackerApplication using Java 17.0.12 with PID 14976 (C:\김주아\업무일지\NetFaultTracker\build\classes\java\main started by nct-sjh in C:\김주아\업무일지\NetFaultTracker)
+2024-10-11 14:18:24 [restartedMain] DEBUG c.n.n.NetFaultTrackerApplication - Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-10-11 14:18:24 [restartedMain] INFO  c.n.n.NetFaultTrackerApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-11 14:18:24 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-11 14:18:24 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-11 14:18:25 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-11 14:18:25 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 57 ms. Found 2 JPA repository interfaces.
+2024-10-11 14:18:26 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-10-11 14:18:26 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-11 14:18:26 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-11 14:18:26 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-11 14:18:26 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2366 ms
+2024-10-11 14:18:26 [restartedMain] DEBUG o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2024-10-11 14:18:27 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-11 14:18:27 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-11 14:18:27 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-11 14:18:27 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-11 14:18:27 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-11 14:18:27 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@27178b40
+2024-10-11 14:18:27 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-11 14:18:27 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-11 14:18:27 [restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7732a1d3) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@700cc688)
+2024-10-11 14:18:27 [restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5ca8747f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@567122bf)
+2024-10-11 14:18:27 [restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@34af2d9b) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@22018500)
+2024-10-11 14:18:27 [restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3d1506b3) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@62aebf74)
+2024-10-11 14:18:27 [restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2fa0954f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1a73c3e)
+2024-10-11 14:18:27 [restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@14128227) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3d0dace)
+2024-10-11 14:18:27 [restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@28f13d16) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@108fb2fa)
+2024-10-11 14:18:27 [restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@108c0976) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@150fa703)
+2024-10-11 14:18:27 [restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@34b72139) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@59c25d37)
+2024-10-11 14:18:28 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-11 14:18:29 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-11 14:18:29 [restartedMain] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+2024-10-11 14:18:29 [restartedMain] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+2024-10-11 14:18:29 [restartedMain] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+2024-10-11 14:18:29 [restartedMain] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+2024-10-11 14:18:29 [restartedMain] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+2024-10-11 14:18:29 [restartedMain] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+2024-10-11 14:18:29 [restartedMain] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+2024-10-11 14:18:29 [restartedMain] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+2024-10-11 14:18:29 [restartedMain] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+2024-10-11 14:18:29 [restartedMain] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+2024-10-11 14:18:29 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-11 14:18:29 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userService
+2024-10-11 14:18:29 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2024-10-11 14:18:30 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2024-10-11 14:18:30 [restartedMain] DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-10-11 14:18:30 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-10-11 14:18:30 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-10-11 14:18:31 [restartedMain] INFO  c.n.n.NetFaultTrackerApplication - Started NetFaultTrackerApplication in 7.324 seconds (process running for 8.116)
+2024-10-11 14:18:35 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-11 14:18:35 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-10-11 14:18:35 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-10-11 14:18:35 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /
+2024-10-11 14:18:35 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /
+2024-10-11 14:18:35 [http-nio-8080-exec-1] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 14:18:35 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /index.html
+2024-10-11 14:18:35 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /index.html
+2024-10-11 14:18:35 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 14:18:35 [http-nio-8080-exec-1] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 14:18:35 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /favicon.ico
+2024-10-11 14:18:35 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /favicon.ico
+2024-10-11 14:18:35 [http-nio-8080-exec-2] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 14:18:35 [http-nio-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-10-11 14:18:35 [http-nio-8080-exec-2] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 14:18:35 [http-nio-8080-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 14:18:36 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /form.html
+2024-10-11 14:18:36 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /form.html
+2024-10-11 14:18:36 [http-nio-8080-exec-3] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 14:18:36 [http-nio-8080-exec-3] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 14:18:36 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 14:18:36 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /favicon.ico
+2024-10-11 14:18:36 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /favicon.ico
+2024-10-11 14:18:36 [http-nio-8080-exec-5] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 14:18:36 [http-nio-8080-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-10-11 14:18:36 [http-nio-8080-exec-5] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 14:18:36 [http-nio-8080-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 14:18:38 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /list.html
+2024-10-11 14:18:38 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /list.html
+2024-10-11 14:18:38 [http-nio-8080-exec-4] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 14:18:38 [http-nio-8080-exec-4] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 14:18:38 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 14:18:38 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/issues?page=0&size=5
+2024-10-11 14:18:38 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /favicon.ico
+2024-10-11 14:18:38 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured GET /favicon.ico
+2024-10-11 14:18:38 [http-nio-8080-exec-7] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 14:18:38 [http-nio-8080-exec-7] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-10-11 14:18:38 [http-nio-8080-exec-7] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 14:18:38 [http-nio-8080-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 14:18:38 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/issues?page=0&size=5
+2024-10-11 14:18:38 [http-nio-8080-exec-6] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 14:18:38 [http-nio-8080-exec-6] INFO  c.n.n.controller.IssueController - 이슈 목록 조회 요청을 받았습니다.
+2024-10-11 14:18:38 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(1342227972<open>)] for JPA transaction
+2024-10-11 14:18:38 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2024-10-11 14:18:38 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@6ee8a3e5]
+2024-10-11 14:18:39 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        i1_0.id,
+        i1_0.assigned_to,
+        i1_0.created_at,
+        i1_0.description,
+        i1_0.priority_id,
+        i1_0.reported_by,
+        i1_0.resolved_at,
+        i1_0.severity_id,
+        i1_0.status,
+        i1_0.title,
+        i1_0.updated_at 
+    from
+        issues i1_0 
+    order by
+        i1_0.created_at desc 
+    limit
+        ?, ?
+2024-10-11 14:18:39 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        count(i1_0.id) 
+    from
+        issues i1_0
+2024-10-11 14:18:39 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2024-10-11 14:18:39 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(1342227972<open>)]
+2024-10-11 14:18:39 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+2024-10-11 14:18:39 [http-nio-8080-exec-6] WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2024-10-11 14:18:39 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 14:18:39 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 14:18:39 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 14:18:39 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 14:18:39 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 14:18:39 [http-nio-8080-exec-6] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 14:18:39 [http-nio-8080-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 14:18:45 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /
+2024-10-11 14:18:45 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /
+2024-10-11 14:18:45 [http-nio-8080-exec-8] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 14:18:45 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /index.html
+2024-10-11 14:18:45 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /index.html
+2024-10-11 14:18:45 [http-nio-8080-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 14:18:45 [http-nio-8080-exec-8] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 14:18:45 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /favicon.ico
+2024-10-11 14:18:45 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /favicon.ico
+2024-10-11 14:18:45 [http-nio-8080-exec-9] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 14:18:45 [http-nio-8080-exec-9] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-10-11 14:18:45 [http-nio-8080-exec-9] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 14:18:45 [http-nio-8080-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 14:34:47 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-11 14:34:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-11 14:34:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-10-11 15:18:02 [restartedMain] INFO  c.n.n.NetFaultTrackerApplication - Starting NetFaultTrackerApplication using Java 17.0.12 with PID 7508 (C:\김주아\업무일지\NetFaultTracker\build\classes\java\main started by nct-sjh in C:\김주아\업무일지\NetFaultTracker)
+2024-10-11 15:18:02 [restartedMain] DEBUG c.n.n.NetFaultTrackerApplication - Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-10-11 15:18:02 [restartedMain] INFO  c.n.n.NetFaultTrackerApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-11 15:18:02 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-11 15:18:02 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-11 15:18:04 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-11 15:18:04 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 57 ms. Found 2 JPA repository interfaces.
+2024-10-11 15:18:05 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-10-11 15:18:05 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-11 15:18:05 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-11 15:18:05 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-11 15:18:05 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2460 ms
+2024-10-11 15:18:05 [restartedMain] DEBUG o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2024-10-11 15:18:05 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-11 15:18:05 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-11 15:18:05 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-11 15:18:05 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-11 15:18:06 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-11 15:18:06 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1e48080d
+2024-10-11 15:18:06 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-11 15:18:06 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-11 15:18:06 [restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@c78bd78) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@480cb1e9)
+2024-10-11 15:18:06 [restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@799cdeef) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5d54a25e)
+2024-10-11 15:18:06 [restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@148e57f1) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@39203f70)
+2024-10-11 15:18:06 [restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2654e51d) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5e6ae5db)
+2024-10-11 15:18:06 [restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@38bd1038) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@de73e0)
+2024-10-11 15:18:06 [restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1a312eb) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@86e7b39)
+2024-10-11 15:18:06 [restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@588296dc) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2bb0bf5f)
+2024-10-11 15:18:06 [restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@321dd488) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@49d1d641)
+2024-10-11 15:18:06 [restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5299dd1) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2b4d806c)
+2024-10-11 15:18:07 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-11 15:18:07 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-11 15:18:07 [restartedMain] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+2024-10-11 15:18:07 [restartedMain] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+2024-10-11 15:18:07 [restartedMain] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+2024-10-11 15:18:07 [restartedMain] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+2024-10-11 15:18:07 [restartedMain] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+2024-10-11 15:18:07 [restartedMain] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+2024-10-11 15:18:07 [restartedMain] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+2024-10-11 15:18:07 [restartedMain] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+2024-10-11 15:18:07 [restartedMain] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+2024-10-11 15:18:07 [restartedMain] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+2024-10-11 15:18:08 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-11 15:18:08 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userService
+2024-10-11 15:18:08 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2024-10-11 15:18:08 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2024-10-11 15:18:08 [restartedMain] DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-10-11 15:18:09 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-10-11 15:18:09 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-10-11 15:18:09 [restartedMain] INFO  c.n.n.NetFaultTrackerApplication - Started NetFaultTrackerApplication in 7.458 seconds (process running for 8.206)
+2024-10-11 15:18:37 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-11 15:18:37 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-10-11 15:18:37 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-10-11 15:18:37 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /
+2024-10-11 15:18:37 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /
+2024-10-11 15:18:37 [http-nio-8080-exec-1] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:18:37 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /index.html
+2024-10-11 15:18:37 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /index.html
+2024-10-11 15:18:37 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:18:37 [http-nio-8080-exec-1] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:18:37 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /favicon.ico
+2024-10-11 15:18:37 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /favicon.ico
+2024-10-11 15:18:37 [http-nio-8080-exec-2] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:18:37 [http-nio-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-10-11 15:18:37 [http-nio-8080-exec-2] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:18:37 [http-nio-8080-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:19:03 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /
+2024-10-11 15:19:03 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /
+2024-10-11 15:19:03 [http-nio-8080-exec-3] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:19:03 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /index.html
+2024-10-11 15:19:03 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /index.html
+2024-10-11 15:19:03 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:19:03 [http-nio-8080-exec-3] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:19:03 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /favicon.ico
+2024-10-11 15:19:03 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /favicon.ico
+2024-10-11 15:19:03 [http-nio-8080-exec-4] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:19:03 [http-nio-8080-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-10-11 15:19:03 [http-nio-8080-exec-4] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:19:03 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:19:04 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /list.html
+2024-10-11 15:19:04 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /list.html
+2024-10-11 15:19:04 [http-nio-8080-exec-5] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:19:04 [http-nio-8080-exec-5] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:19:04 [http-nio-8080-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:19:04 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /favicon.ico
+2024-10-11 15:19:04 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/issues?page=0&size=5
+2024-10-11 15:19:04 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured GET /favicon.ico
+2024-10-11 15:19:04 [http-nio-8080-exec-7] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:19:04 [http-nio-8080-exec-7] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-10-11 15:19:04 [http-nio-8080-exec-7] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:19:04 [http-nio-8080-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:19:04 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/issues?page=0&size=5
+2024-10-11 15:19:04 [http-nio-8080-exec-6] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:19:04 [http-nio-8080-exec-6] INFO  c.n.n.controller.IssueController - 이슈 목록 조회 요청을 받았습니다.
+2024-10-11 15:19:04 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(1168558300<open>)] for JPA transaction
+2024-10-11 15:19:04 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2024-10-11 15:19:04 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@6ed0f155]
+2024-10-11 15:19:04 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        i1_0.id,
+        i1_0.assigned_to,
+        i1_0.created_at,
+        i1_0.description,
+        i1_0.priority_id,
+        i1_0.reported_by,
+        i1_0.resolved_at,
+        i1_0.severity_id,
+        i1_0.status,
+        i1_0.title,
+        i1_0.updated_at 
+    from
+        issues i1_0 
+    order by
+        i1_0.created_at desc 
+    limit
+        ?, ?
+2024-10-11 15:19:04 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        count(i1_0.id) 
+    from
+        issues i1_0
+2024-10-11 15:19:04 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2024-10-11 15:19:04 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(1168558300<open>)]
+2024-10-11 15:19:04 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+2024-10-11 15:19:05 [http-nio-8080-exec-6] WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2024-10-11 15:19:05 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:19:05 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:19:05 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:19:05 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:19:05 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:19:05 [http-nio-8080-exec-6] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:19:05 [http-nio-8080-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:19:07 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/issues?page=1&size=5
+2024-10-11 15:19:07 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/issues?page=1&size=5
+2024-10-11 15:19:07 [http-nio-8080-exec-9] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:19:07 [http-nio-8080-exec-9] INFO  c.n.n.controller.IssueController - 이슈 목록 조회 요청을 받았습니다.
+2024-10-11 15:19:07 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(444955154<open>)] for JPA transaction
+2024-10-11 15:19:07 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2024-10-11 15:19:07 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@1ebaed9a]
+2024-10-11 15:19:07 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        i1_0.id,
+        i1_0.assigned_to,
+        i1_0.created_at,
+        i1_0.description,
+        i1_0.priority_id,
+        i1_0.reported_by,
+        i1_0.resolved_at,
+        i1_0.severity_id,
+        i1_0.status,
+        i1_0.title,
+        i1_0.updated_at 
+    from
+        issues i1_0 
+    order by
+        i1_0.created_at desc 
+    limit
+        ?, ?
+2024-10-11 15:19:07 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2024-10-11 15:19:07 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(444955154<open>)]
+2024-10-11 15:19:07 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+2024-10-11 15:19:07 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:19:07 [http-nio-8080-exec-9] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:19:07 [http-nio-8080-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:19:09 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/issues?page=0&size=5
+2024-10-11 15:19:09 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/issues?page=0&size=5
+2024-10-11 15:19:09 [http-nio-8080-exec-10] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:19:09 [http-nio-8080-exec-10] INFO  c.n.n.controller.IssueController - 이슈 목록 조회 요청을 받았습니다.
+2024-10-11 15:19:09 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(1685165822<open>)] for JPA transaction
+2024-10-11 15:19:09 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2024-10-11 15:19:09 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@604e0ea8]
+2024-10-11 15:19:09 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        i1_0.id,
+        i1_0.assigned_to,
+        i1_0.created_at,
+        i1_0.description,
+        i1_0.priority_id,
+        i1_0.reported_by,
+        i1_0.resolved_at,
+        i1_0.severity_id,
+        i1_0.status,
+        i1_0.title,
+        i1_0.updated_at 
+    from
+        issues i1_0 
+    order by
+        i1_0.created_at desc 
+    limit
+        ?, ?
+2024-10-11 15:19:09 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        count(i1_0.id) 
+    from
+        issues i1_0
+2024-10-11 15:19:09 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2024-10-11 15:19:09 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(1685165822<open>)]
+2024-10-11 15:19:09 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+2024-10-11 15:19:09 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:19:09 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:19:09 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:19:09 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:19:09 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:19:09 [http-nio-8080-exec-10] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:19:09 [http-nio-8080-exec-10] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:19:10 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /form.html
+2024-10-11 15:19:10 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /form.html
+2024-10-11 15:19:10 [http-nio-8080-exec-8] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:19:10 [http-nio-8080-exec-8] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:19:10 [http-nio-8080-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:19:10 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /favicon.ico
+2024-10-11 15:19:10 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /favicon.ico
+2024-10-11 15:19:10 [http-nio-8080-exec-1] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:19:10 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-10-11 15:19:10 [http-nio-8080-exec-1] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:19:10 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:19:22 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/issues
+2024-10-11 15:19:22 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/issues
+2024-10-11 15:19:22 [http-nio-8080-exec-2] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:19:22 [http-nio-8080-exec-2] INFO  c.n.n.controller.IssueController - 새로운 이슈 생성 요청을 받았습니다: asasdfasd
+2024-10-11 15:19:22 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(1291779597<open>)] for JPA transaction
+2024-10-11 15:19:22 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2024-10-11 15:19:22 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@6801ce05]
+2024-10-11 15:19:22 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    /* insert for
+        com.netcoretech.netfaulttracker.entity.Issue */insert 
+    into
+        issues (assigned_to, created_at, description, priority_id, reported_by, resolved_at, severity_id, status, title, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-10-11 15:19:22 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2024-10-11 15:19:22 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(1291779597<open>)]
+2024-10-11 15:19:22 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+2024-10-11 15:19:22 [http-nio-8080-exec-2] INFO  c.n.n.controller.IssueController - 이슈가 성공적으로 생성되었습니다: Issue(id=17, title=asasdfasd, description=ffffff, status=IN_PROGRESS, priority=null, severity=null, reportedBy=null, assignedTo=null, createdAt=2024-10-11T15:19:22.737754, updatedAt=2024-10-11T15:19:22.737754, resolvedAt=null, comments=null)
+2024-10-11 15:19:22 [http-nio-8080-exec-2] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:19:22 [http-nio-8080-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:19:24 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /list.html
+2024-10-11 15:19:24 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /list.html
+2024-10-11 15:19:24 [http-nio-8080-exec-3] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:19:24 [http-nio-8080-exec-3] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:19:24 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:19:24 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/issues?page=0&size=5
+2024-10-11 15:19:24 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/issues?page=0&size=5
+2024-10-11 15:19:24 [http-nio-8080-exec-4] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:19:24 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /favicon.ico
+2024-10-11 15:19:24 [http-nio-8080-exec-4] INFO  c.n.n.controller.IssueController - 이슈 목록 조회 요청을 받았습니다.
+2024-10-11 15:19:24 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(2050635735<open>)] for JPA transaction
+2024-10-11 15:19:24 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2024-10-11 15:19:24 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /favicon.ico
+2024-10-11 15:19:24 [http-nio-8080-exec-5] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:19:24 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@7e05ac48]
+2024-10-11 15:19:24 [http-nio-8080-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-10-11 15:19:24 [http-nio-8080-exec-5] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:19:24 [http-nio-8080-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:19:24 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        i1_0.id,
+        i1_0.assigned_to,
+        i1_0.created_at,
+        i1_0.description,
+        i1_0.priority_id,
+        i1_0.reported_by,
+        i1_0.resolved_at,
+        i1_0.severity_id,
+        i1_0.status,
+        i1_0.title,
+        i1_0.updated_at 
+    from
+        issues i1_0 
+    order by
+        i1_0.created_at desc 
+    limit
+        ?, ?
+2024-10-11 15:19:24 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        count(i1_0.id) 
+    from
+        issues i1_0
+2024-10-11 15:19:24 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2024-10-11 15:19:24 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(2050635735<open>)]
+2024-10-11 15:19:24 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+2024-10-11 15:19:24 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:19:24 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:19:24 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:19:24 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:19:24 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:19:24 [http-nio-8080-exec-4] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:19:24 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:19:28 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /form.html
+2024-10-11 15:19:28 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured GET /form.html
+2024-10-11 15:19:28 [http-nio-8080-exec-7] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:19:28 [http-nio-8080-exec-7] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:19:28 [http-nio-8080-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:19:28 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /favicon.ico
+2024-10-11 15:19:28 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /favicon.ico
+2024-10-11 15:19:28 [http-nio-8080-exec-6] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:19:28 [http-nio-8080-exec-6] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-10-11 15:19:28 [http-nio-8080-exec-6] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:19:28 [http-nio-8080-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:19:50 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/issues
+2024-10-11 15:19:50 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/issues
+2024-10-11 15:19:50 [http-nio-8080-exec-9] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:19:50 [http-nio-8080-exec-9] INFO  c.n.n.controller.IssueController - 새로운 이슈 생성 요청을 받았습니다: 가나다라
+2024-10-11 15:19:50 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(1437477810<open>)] for JPA transaction
+2024-10-11 15:19:50 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2024-10-11 15:19:50 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@69fe13b3]
+2024-10-11 15:19:50 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    /* insert for
+        com.netcoretech.netfaulttracker.entity.Issue */insert 
+    into
+        issues (assigned_to, created_at, description, priority_id, reported_by, resolved_at, severity_id, status, title, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-10-11 15:19:50 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2024-10-11 15:19:50 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(1437477810<open>)]
+2024-10-11 15:19:50 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+2024-10-11 15:19:50 [http-nio-8080-exec-9] INFO  c.n.n.controller.IssueController - 이슈가 성공적으로 생성되었습니다: Issue(id=18, title=가나다라, description=<script>
+alert("a");
+</script>, status=OPEN, priority=null, severity=null, reportedBy=null, assignedTo=null, createdAt=2024-10-11T15:19:50.871770, updatedAt=2024-10-11T15:19:50.871770, resolvedAt=null, comments=null)
+2024-10-11 15:19:50 [http-nio-8080-exec-9] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:19:50 [http-nio-8080-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:19:52 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /list.html
+2024-10-11 15:19:52 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured GET /list.html
+2024-10-11 15:19:52 [http-nio-8080-exec-10] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:19:52 [http-nio-8080-exec-10] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:19:52 [http-nio-8080-exec-10] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:19:52 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/issues?page=0&size=5
+2024-10-11 15:19:52 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/issues?page=0&size=5
+2024-10-11 15:19:52 [http-nio-8080-exec-8] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:19:52 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /favicon.ico
+2024-10-11 15:19:52 [http-nio-8080-exec-8] INFO  c.n.n.controller.IssueController - 이슈 목록 조회 요청을 받았습니다.
+2024-10-11 15:19:52 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(537028722<open>)] for JPA transaction
+2024-10-11 15:19:52 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2024-10-11 15:19:52 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /favicon.ico
+2024-10-11 15:19:52 [http-nio-8080-exec-1] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:19:52 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@6500e216]
+2024-10-11 15:19:52 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-10-11 15:19:52 [http-nio-8080-exec-1] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:19:52 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:19:52 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        i1_0.id,
+        i1_0.assigned_to,
+        i1_0.created_at,
+        i1_0.description,
+        i1_0.priority_id,
+        i1_0.reported_by,
+        i1_0.resolved_at,
+        i1_0.severity_id,
+        i1_0.status,
+        i1_0.title,
+        i1_0.updated_at 
+    from
+        issues i1_0 
+    order by
+        i1_0.created_at desc 
+    limit
+        ?, ?
+2024-10-11 15:19:52 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        count(i1_0.id) 
+    from
+        issues i1_0
+2024-10-11 15:19:52 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2024-10-11 15:19:52 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(537028722<open>)]
+2024-10-11 15:19:52 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+2024-10-11 15:19:52 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:19:52 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:19:52 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:19:52 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:19:52 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:19:52 [http-nio-8080-exec-8] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:19:52 [http-nio-8080-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:19:53 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /view.html?id=18
+2024-10-11 15:19:53 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /view.html?id=18
+2024-10-11 15:19:53 [http-nio-8080-exec-2] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:19:53 [http-nio-8080-exec-2] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:19:53 [http-nio-8080-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:19:53 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/issues/18
+2024-10-11 15:19:53 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/issues/18
+2024-10-11 15:19:53 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /favicon.ico
+2024-10-11 15:19:53 [http-nio-8080-exec-3] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:19:53 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /favicon.ico
+2024-10-11 15:19:53 [http-nio-8080-exec-5] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:19:53 [http-nio-8080-exec-3] INFO  c.n.n.controller.IssueController - ID가 18인 이슈 조회 요청을 받았습니다.
+2024-10-11 15:19:53 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(1333047176<open>)] for JPA transaction
+2024-10-11 15:19:53 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2024-10-11 15:19:53 [http-nio-8080-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-10-11 15:19:53 [http-nio-8080-exec-5] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:19:53 [http-nio-8080-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:19:53 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@7b405442]
+2024-10-11 15:19:53 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        i1_0.id,
+        at1_0.id,
+        at1_0.email,
+        at1_0.password,
+        at1_0.role,
+        at1_0.username,
+        i1_0.created_at,
+        i1_0.description,
+        p1_0.id,
+        p1_0.description,
+        p1_0.name,
+        rb1_0.id,
+        rb1_0.email,
+        rb1_0.password,
+        rb1_0.role,
+        rb1_0.username,
+        i1_0.resolved_at,
+        s1_0.id,
+        s1_0.description,
+        s1_0.name,
+        i1_0.status,
+        i1_0.title,
+        i1_0.updated_at 
+    from
+        issues i1_0 
+    left join
+        users at1_0 
+            on at1_0.id=i1_0.assigned_to 
+    left join
+        priorities p1_0 
+            on p1_0.id=i1_0.priority_id 
+    left join
+        users rb1_0 
+            on rb1_0.id=i1_0.reported_by 
+    left join
+        severities s1_0 
+            on s1_0.id=i1_0.severity_id 
+    where
+        i1_0.id=?
+2024-10-11 15:19:53 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2024-10-11 15:19:53 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(1333047176<open>)]
+2024-10-11 15:19:53 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+2024-10-11 15:19:53 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:19:53 [http-nio-8080-exec-3] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:19:53 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:20:00 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /form.html?id=18
+2024-10-11 15:20:00 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /form.html?id=18
+2024-10-11 15:20:00 [http-nio-8080-exec-4] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:20:00 [http-nio-8080-exec-4] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:20:00 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:20:00 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/issues/18
+2024-10-11 15:20:00 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/issues/18
+2024-10-11 15:20:00 [http-nio-8080-exec-7] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:20:00 [http-nio-8080-exec-7] INFO  c.n.n.controller.IssueController - ID가 18인 이슈 조회 요청을 받았습니다.
+2024-10-11 15:20:00 [http-nio-8080-exec-7] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(1791914994<open>)] for JPA transaction
+2024-10-11 15:20:00 [http-nio-8080-exec-7] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2024-10-11 15:20:00 [http-nio-8080-exec-7] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@1ccddee6]
+2024-10-11 15:20:00 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        i1_0.id,
+        at1_0.id,
+        at1_0.email,
+        at1_0.password,
+        at1_0.role,
+        at1_0.username,
+        i1_0.created_at,
+        i1_0.description,
+        p1_0.id,
+        p1_0.description,
+        p1_0.name,
+        rb1_0.id,
+        rb1_0.email,
+        rb1_0.password,
+        rb1_0.role,
+        rb1_0.username,
+        i1_0.resolved_at,
+        s1_0.id,
+        s1_0.description,
+        s1_0.name,
+        i1_0.status,
+        i1_0.title,
+        i1_0.updated_at 
+    from
+        issues i1_0 
+    left join
+        users at1_0 
+            on at1_0.id=i1_0.assigned_to 
+    left join
+        priorities p1_0 
+            on p1_0.id=i1_0.priority_id 
+    left join
+        users rb1_0 
+            on rb1_0.id=i1_0.reported_by 
+    left join
+        severities s1_0 
+            on s1_0.id=i1_0.severity_id 
+    where
+        i1_0.id=?
+2024-10-11 15:20:00 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /favicon.ico
+2024-10-11 15:20:00 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /favicon.ico
+2024-10-11 15:20:00 [http-nio-8080-exec-6] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:20:00 [http-nio-8080-exec-7] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2024-10-11 15:20:00 [http-nio-8080-exec-7] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(1791914994<open>)]
+2024-10-11 15:20:00 [http-nio-8080-exec-6] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-10-11 15:20:00 [http-nio-8080-exec-6] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:20:00 [http-nio-8080-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:20:00 [http-nio-8080-exec-7] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+2024-10-11 15:20:00 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:20:00 [http-nio-8080-exec-7] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:20:00 [http-nio-8080-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:20:05 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /list.html
+2024-10-11 15:20:05 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /list.html
+2024-10-11 15:20:05 [http-nio-8080-exec-9] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:20:05 [http-nio-8080-exec-9] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:20:05 [http-nio-8080-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:20:05 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/issues?page=0&size=5
+2024-10-11 15:20:05 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /favicon.ico
+2024-10-11 15:20:05 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/issues?page=0&size=5
+2024-10-11 15:20:05 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /favicon.ico
+2024-10-11 15:20:05 [http-nio-8080-exec-10] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:20:05 [http-nio-8080-exec-1] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:20:05 [http-nio-8080-exec-10] INFO  c.n.n.controller.IssueController - 이슈 목록 조회 요청을 받았습니다.
+2024-10-11 15:20:05 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(1137529562<open>)] for JPA transaction
+2024-10-11 15:20:05 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2024-10-11 15:20:05 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-10-11 15:20:05 [http-nio-8080-exec-1] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:20:05 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:20:05 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@42d045ba]
+2024-10-11 15:20:05 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        i1_0.id,
+        i1_0.assigned_to,
+        i1_0.created_at,
+        i1_0.description,
+        i1_0.priority_id,
+        i1_0.reported_by,
+        i1_0.resolved_at,
+        i1_0.severity_id,
+        i1_0.status,
+        i1_0.title,
+        i1_0.updated_at 
+    from
+        issues i1_0 
+    order by
+        i1_0.created_at desc 
+    limit
+        ?, ?
+2024-10-11 15:20:05 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        count(i1_0.id) 
+    from
+        issues i1_0
+2024-10-11 15:20:05 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2024-10-11 15:20:05 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(1137529562<open>)]
+2024-10-11 15:20:05 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+2024-10-11 15:20:05 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:20:05 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:20:05 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:20:05 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:20:05 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:20:05 [http-nio-8080-exec-10] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:20:05 [http-nio-8080-exec-10] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:20:08 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /view.html?id=13
+2024-10-11 15:20:08 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /view.html?id=13
+2024-10-11 15:20:08 [http-nio-8080-exec-8] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:20:08 [http-nio-8080-exec-8] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:20:08 [http-nio-8080-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:20:08 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /favicon.ico
+2024-10-11 15:20:08 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/issues/13
+2024-10-11 15:20:08 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /favicon.ico
+2024-10-11 15:20:08 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/issues/13
+2024-10-11 15:20:08 [http-nio-8080-exec-5] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:20:08 [http-nio-8080-exec-2] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:20:08 [http-nio-8080-exec-2] INFO  c.n.n.controller.IssueController - ID가 13인 이슈 조회 요청을 받았습니다.
+2024-10-11 15:20:08 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(40655324<open>)] for JPA transaction
+2024-10-11 15:20:08 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2024-10-11 15:20:08 [http-nio-8080-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-10-11 15:20:08 [http-nio-8080-exec-5] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:20:08 [http-nio-8080-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:20:08 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@1696f4c7]
+2024-10-11 15:20:08 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        i1_0.id,
+        at1_0.id,
+        at1_0.email,
+        at1_0.password,
+        at1_0.role,
+        at1_0.username,
+        i1_0.created_at,
+        i1_0.description,
+        p1_0.id,
+        p1_0.description,
+        p1_0.name,
+        rb1_0.id,
+        rb1_0.email,
+        rb1_0.password,
+        rb1_0.role,
+        rb1_0.username,
+        i1_0.resolved_at,
+        s1_0.id,
+        s1_0.description,
+        s1_0.name,
+        i1_0.status,
+        i1_0.title,
+        i1_0.updated_at 
+    from
+        issues i1_0 
+    left join
+        users at1_0 
+            on at1_0.id=i1_0.assigned_to 
+    left join
+        priorities p1_0 
+            on p1_0.id=i1_0.priority_id 
+    left join
+        users rb1_0 
+            on rb1_0.id=i1_0.reported_by 
+    left join
+        severities s1_0 
+            on s1_0.id=i1_0.severity_id 
+    where
+        i1_0.id=?
+2024-10-11 15:20:08 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2024-10-11 15:20:08 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(40655324<open>)]
+2024-10-11 15:20:08 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+2024-10-11 15:20:08 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:20:08 [http-nio-8080-exec-2] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:20:08 [http-nio-8080-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:20:10 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /form.html?id=13
+2024-10-11 15:20:10 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /form.html?id=13
+2024-10-11 15:20:10 [http-nio-8080-exec-3] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:20:10 [http-nio-8080-exec-3] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:20:10 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:20:10 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/issues/13
+2024-10-11 15:20:10 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /favicon.ico
+2024-10-11 15:20:10 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /favicon.ico
+2024-10-11 15:20:10 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/issues/13
+2024-10-11 15:20:10 [http-nio-8080-exec-6] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:20:10 [http-nio-8080-exec-4] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:20:10 [http-nio-8080-exec-4] INFO  c.n.n.controller.IssueController - ID가 13인 이슈 조회 요청을 받았습니다.
+2024-10-11 15:20:10 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(397139762<open>)] for JPA transaction
+2024-10-11 15:20:10 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2024-10-11 15:20:10 [http-nio-8080-exec-6] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-10-11 15:20:10 [http-nio-8080-exec-6] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:20:10 [http-nio-8080-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:20:10 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@69587902]
+2024-10-11 15:20:10 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        i1_0.id,
+        at1_0.id,
+        at1_0.email,
+        at1_0.password,
+        at1_0.role,
+        at1_0.username,
+        i1_0.created_at,
+        i1_0.description,
+        p1_0.id,
+        p1_0.description,
+        p1_0.name,
+        rb1_0.id,
+        rb1_0.email,
+        rb1_0.password,
+        rb1_0.role,
+        rb1_0.username,
+        i1_0.resolved_at,
+        s1_0.id,
+        s1_0.description,
+        s1_0.name,
+        i1_0.status,
+        i1_0.title,
+        i1_0.updated_at 
+    from
+        issues i1_0 
+    left join
+        users at1_0 
+            on at1_0.id=i1_0.assigned_to 
+    left join
+        priorities p1_0 
+            on p1_0.id=i1_0.priority_id 
+    left join
+        users rb1_0 
+            on rb1_0.id=i1_0.reported_by 
+    left join
+        severities s1_0 
+            on s1_0.id=i1_0.severity_id 
+    where
+        i1_0.id=?
+2024-10-11 15:20:10 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2024-10-11 15:20:10 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(397139762<open>)]
+2024-10-11 15:20:10 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+2024-10-11 15:20:10 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:20:10 [http-nio-8080-exec-4] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:20:10 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:20:12 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /view.html?id=13
+2024-10-11 15:20:12 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured GET /view.html?id=13
+2024-10-11 15:20:12 [http-nio-8080-exec-7] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:20:12 [http-nio-8080-exec-7] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:20:12 [http-nio-8080-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:20:12 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/issues/13
+2024-10-11 15:20:12 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/issues/13
+2024-10-11 15:20:12 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /favicon.ico
+2024-10-11 15:20:12 [http-nio-8080-exec-9] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:20:12 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /favicon.ico
+2024-10-11 15:20:12 [http-nio-8080-exec-9] INFO  c.n.n.controller.IssueController - ID가 13인 이슈 조회 요청을 받았습니다.
+2024-10-11 15:20:12 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(1549812178<open>)] for JPA transaction
+2024-10-11 15:20:12 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2024-10-11 15:20:12 [http-nio-8080-exec-1] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:20:12 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-10-11 15:20:12 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@444a84cd]
+2024-10-11 15:20:12 [http-nio-8080-exec-1] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:20:12 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:20:12 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        i1_0.id,
+        at1_0.id,
+        at1_0.email,
+        at1_0.password,
+        at1_0.role,
+        at1_0.username,
+        i1_0.created_at,
+        i1_0.description,
+        p1_0.id,
+        p1_0.description,
+        p1_0.name,
+        rb1_0.id,
+        rb1_0.email,
+        rb1_0.password,
+        rb1_0.role,
+        rb1_0.username,
+        i1_0.resolved_at,
+        s1_0.id,
+        s1_0.description,
+        s1_0.name,
+        i1_0.status,
+        i1_0.title,
+        i1_0.updated_at 
+    from
+        issues i1_0 
+    left join
+        users at1_0 
+            on at1_0.id=i1_0.assigned_to 
+    left join
+        priorities p1_0 
+            on p1_0.id=i1_0.priority_id 
+    left join
+        users rb1_0 
+            on rb1_0.id=i1_0.reported_by 
+    left join
+        severities s1_0 
+            on s1_0.id=i1_0.severity_id 
+    where
+        i1_0.id=?
+2024-10-11 15:20:12 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2024-10-11 15:20:12 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(1549812178<open>)]
+2024-10-11 15:20:12 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+2024-10-11 15:20:12 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:20:12 [http-nio-8080-exec-9] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:20:12 [http-nio-8080-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:20:15 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing DELETE /api/issues/13
+2024-10-11 15:20:15 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured DELETE /api/issues/13
+2024-10-11 15:20:15 [http-nio-8080-exec-10] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:20:15 [http-nio-8080-exec-10] INFO  c.n.n.controller.IssueController - ID '13'인 이슈 삭제 요청을 받았습니다.
+2024-10-11 15:20:15 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(1589856211<open>)] for JPA transaction
+2024-10-11 15:20:15 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2024-10-11 15:20:15 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@6dd50099]
+2024-10-11 15:20:15 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        i1_0.id,
+        at1_0.id,
+        at1_0.email,
+        at1_0.password,
+        at1_0.role,
+        at1_0.username,
+        i1_0.created_at,
+        i1_0.description,
+        p1_0.id,
+        p1_0.description,
+        p1_0.name,
+        rb1_0.id,
+        rb1_0.email,
+        rb1_0.password,
+        rb1_0.role,
+        rb1_0.username,
+        i1_0.resolved_at,
+        s1_0.id,
+        s1_0.description,
+        s1_0.name,
+        i1_0.status,
+        i1_0.title,
+        i1_0.updated_at 
+    from
+        issues i1_0 
+    left join
+        users at1_0 
+            on at1_0.id=i1_0.assigned_to 
+    left join
+        priorities p1_0 
+            on p1_0.id=i1_0.priority_id 
+    left join
+        users rb1_0 
+            on rb1_0.id=i1_0.reported_by 
+    left join
+        severities s1_0 
+            on s1_0.id=i1_0.severity_id 
+    where
+        i1_0.id=?
+2024-10-11 15:20:15 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2024-10-11 15:20:15 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(1589856211<open>)]
+2024-10-11 15:20:15 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+2024-10-11 15:20:15 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(1589856211<open>)] for JPA transaction
+2024-10-11 15:20:15 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.delete]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2024-10-11 15:20:15 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@6b223b94]
+2024-10-11 15:20:15 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:20:15 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2024-10-11 15:20:15 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(1589856211<open>)]
+2024-10-11 15:20:15 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    /* delete for com.netcoretech.netfaulttracker.entity.Issue */delete 
+    from
+        issues 
+    where
+        id=?
+2024-10-11 15:20:15 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+2024-10-11 15:20:15 [http-nio-8080-exec-10] INFO  c.n.n.service.IssueService - 이슈(ID: 13)가 성공적으로 삭제되었습니다.
+2024-10-11 15:20:15 [http-nio-8080-exec-10] INFO  c.n.n.controller.IssueController - 이슈가 성공적으로 삭제되었습니다: 13
+2024-10-11 15:20:15 [http-nio-8080-exec-10] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:20:15 [http-nio-8080-exec-10] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:20:17 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /list.html
+2024-10-11 15:20:17 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /list.html
+2024-10-11 15:20:17 [http-nio-8080-exec-8] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:20:17 [http-nio-8080-exec-8] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:20:17 [http-nio-8080-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:20:17 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/issues?page=0&size=5
+2024-10-11 15:20:17 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/issues?page=0&size=5
+2024-10-11 15:20:17 [http-nio-8080-exec-5] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:20:17 [http-nio-8080-exec-5] INFO  c.n.n.controller.IssueController - 이슈 목록 조회 요청을 받았습니다.
+2024-10-11 15:20:17 [http-nio-8080-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(43394629<open>)] for JPA transaction
+2024-10-11 15:20:17 [http-nio-8080-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2024-10-11 15:20:17 [http-nio-8080-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@154d201d]
+2024-10-11 15:20:17 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        i1_0.id,
+        i1_0.assigned_to,
+        i1_0.created_at,
+        i1_0.description,
+        i1_0.priority_id,
+        i1_0.reported_by,
+        i1_0.resolved_at,
+        i1_0.severity_id,
+        i1_0.status,
+        i1_0.title,
+        i1_0.updated_at 
+    from
+        issues i1_0 
+    order by
+        i1_0.created_at desc 
+    limit
+        ?, ?
+2024-10-11 15:20:17 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /favicon.ico
+2024-10-11 15:20:17 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        count(i1_0.id) 
+    from
+        issues i1_0
+2024-10-11 15:20:17 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /favicon.ico
+2024-10-11 15:20:17 [http-nio-8080-exec-2] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:20:17 [http-nio-8080-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2024-10-11 15:20:17 [http-nio-8080-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(43394629<open>)]
+2024-10-11 15:20:17 [http-nio-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-10-11 15:20:17 [http-nio-8080-exec-2] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:20:17 [http-nio-8080-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:20:17 [http-nio-8080-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+2024-10-11 15:20:17 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:20:17 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:20:17 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:20:17 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:20:17 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:20:17 [http-nio-8080-exec-5] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:20:17 [http-nio-8080-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:20:19 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/issues?page=1&size=5
+2024-10-11 15:20:19 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/issues?page=1&size=5
+2024-10-11 15:20:19 [http-nio-8080-exec-3] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:20:19 [http-nio-8080-exec-3] INFO  c.n.n.controller.IssueController - 이슈 목록 조회 요청을 받았습니다.
+2024-10-11 15:20:19 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(419240022<open>)] for JPA transaction
+2024-10-11 15:20:19 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2024-10-11 15:20:19 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@46ed46a]
+2024-10-11 15:20:19 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        i1_0.id,
+        i1_0.assigned_to,
+        i1_0.created_at,
+        i1_0.description,
+        i1_0.priority_id,
+        i1_0.reported_by,
+        i1_0.resolved_at,
+        i1_0.severity_id,
+        i1_0.status,
+        i1_0.title,
+        i1_0.updated_at 
+    from
+        issues i1_0 
+    order by
+        i1_0.created_at desc 
+    limit
+        ?, ?
+2024-10-11 15:20:19 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2024-10-11 15:20:19 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(419240022<open>)]
+2024-10-11 15:20:19 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+2024-10-11 15:20:19 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:20:19 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:20:19 [http-nio-8080-exec-3] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:20:19 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:27:17 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /form.html
+2024-10-11 15:27:17 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured GET /form.html
+2024-10-11 15:27:17 [http-nio-8080-exec-7] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:27:17 [http-nio-8080-exec-7] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:27:17 [http-nio-8080-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:27:17 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /favicon.ico
+2024-10-11 15:27:17 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /favicon.ico
+2024-10-11 15:27:17 [http-nio-8080-exec-1] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:27:17 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-10-11 15:27:17 [http-nio-8080-exec-1] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:27:17 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:27:31 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/issues
+2024-10-11 15:27:31 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/issues
+2024-10-11 15:27:31 [http-nio-8080-exec-9] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:27:31 [http-nio-8080-exec-9] INFO  c.n.n.controller.IssueController - 새로운 이슈 생성 요청을 받았습니다: aaaa
+2024-10-11 15:27:31 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(1696983049<open>)] for JPA transaction
+2024-10-11 15:27:31 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2024-10-11 15:27:31 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@61dfa4f8]
+2024-10-11 15:27:31 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction rollback
+2024-10-11 15:27:31 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Rolling back JPA transaction on EntityManager [SessionImpl(1696983049<open>)]
+2024-10-11 15:27:31 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+2024-10-11 15:27:31 [http-nio-8080-exec-9] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [jakarta.validation.ConstraintViolationException: Validation failed for classes [com.netcoretech.netfaulttracker.entity.Issue] during persist time for groups [jakarta.validation.groups.Default, ]<EOL>List of constraint violations:[<EOL>?ConstraintViolationImpl{interpolatedMessage='설명은 1000자를 초과할 수 없습니다.', propertyPath=description, rootBeanClass=class com.netcoretech.netfaulttracker.entity.Issue, messageTemplate='설명은 1000자를 초과할 수 없습니다.'}<EOL>]]
+2024-10-11 15:27:31 [http-nio-8080-exec-9] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:27:31 [http-nio-8080-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:28:40 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /form.html
+2024-10-11 15:28:40 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /form.html
+2024-10-11 15:28:41 [http-nio-8080-exec-2] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:28:41 [http-nio-8080-exec-2] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:28:41 [http-nio-8080-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:28:41 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /favicon.ico
+2024-10-11 15:28:41 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /favicon.ico
+2024-10-11 15:28:41 [http-nio-8080-exec-5] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:28:41 [http-nio-8080-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-10-11 15:28:41 [http-nio-8080-exec-5] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:28:41 [http-nio-8080-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:28:46 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/issues
+2024-10-11 15:28:46 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/issues
+2024-10-11 15:28:46 [http-nio-8080-exec-3] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:28:46 [http-nio-8080-exec-3] INFO  c.n.n.controller.IssueController - 새로운 이슈 생성 요청을 받았습니다: asdf
+2024-10-11 15:28:46 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(1192990060<open>)] for JPA transaction
+2024-10-11 15:28:46 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2024-10-11 15:28:46 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@111a8d48]
+2024-10-11 15:28:46 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction rollback
+2024-10-11 15:28:46 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Rolling back JPA transaction on EntityManager [SessionImpl(1192990060<open>)]
+2024-10-11 15:28:46 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+2024-10-11 15:28:46 [http-nio-8080-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [jakarta.validation.ConstraintViolationException: Validation failed for classes [com.netcoretech.netfaulttracker.entity.Issue] during persist time for groups [jakarta.validation.groups.Default, ]<EOL>List of constraint violations:[<EOL>?ConstraintViolationImpl{interpolatedMessage='설명은 1000자를 초과할 수 없습니다.', propertyPath=description, rootBeanClass=class com.netcoretech.netfaulttracker.entity.Issue, messageTemplate='설명은 1000자를 초과할 수 없습니다.'}<EOL>]]
+2024-10-11 15:28:46 [http-nio-8080-exec-3] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:28:46 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:29:14 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/issues
+2024-10-11 15:29:14 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/issues
+2024-10-11 15:29:14 [http-nio-8080-exec-6] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:29:14 [http-nio-8080-exec-6] INFO  c.n.n.controller.IssueController - 새로운 이슈 생성 요청을 받았습니다: asdf
+2024-10-11 15:29:14 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(51255247<open>)] for JPA transaction
+2024-10-11 15:29:14 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2024-10-11 15:29:14 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@255706b1]
+2024-10-11 15:29:14 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction rollback
+2024-10-11 15:29:14 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Rolling back JPA transaction on EntityManager [SessionImpl(51255247<open>)]
+2024-10-11 15:29:14 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+2024-10-11 15:29:14 [http-nio-8080-exec-6] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [jakarta.validation.ConstraintViolationException: Validation failed for classes [com.netcoretech.netfaulttracker.entity.Issue] during persist time for groups [jakarta.validation.groups.Default, ]<EOL>List of constraint violations:[<EOL>?ConstraintViolationImpl{interpolatedMessage='설명은 1000자를 초과할 수 없습니다.', propertyPath=description, rootBeanClass=class com.netcoretech.netfaulttracker.entity.Issue, messageTemplate='설명은 1000자를 초과할 수 없습니다.'}<EOL>]]
+2024-10-11 15:29:14 [http-nio-8080-exec-6] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:29:14 [http-nio-8080-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:30:33 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/issues
+2024-10-11 15:30:33 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/issues
+2024-10-11 15:30:33 [http-nio-8080-exec-1] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:30:33 [http-nio-8080-exec-1] INFO  c.n.n.controller.IssueController - 새로운 이슈 생성 요청을 받았습니다: asdf
+2024-10-11 15:30:33 [http-nio-8080-exec-1] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(1135554298<open>)] for JPA transaction
+2024-10-11 15:30:33 [http-nio-8080-exec-1] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2024-10-11 15:30:33 [http-nio-8080-exec-1] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@3866f488]
+2024-10-11 15:30:33 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    /* insert for
+        com.netcoretech.netfaulttracker.entity.Issue */insert 
+    into
+        issues (assigned_to, created_at, description, priority_id, reported_by, resolved_at, severity_id, status, title, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-10-11 15:30:33 [http-nio-8080-exec-1] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2024-10-11 15:30:33 [http-nio-8080-exec-1] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(1135554298<open>)]
+2024-10-11 15:30:33 [http-nio-8080-exec-1] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+2024-10-11 15:30:33 [http-nio-8080-exec-1] INFO  c.n.n.controller.IssueController - 이슈가 성공적으로 생성되었습니다: Issue(id=19, title=asdf, description=xxxxx, status=OPEN, priority=null, severity=null, reportedBy=null, assignedTo=null, createdAt=2024-10-11T15:30:33.743603, updatedAt=2024-10-11T15:30:33.743603, resolvedAt=null, comments=null)
+2024-10-11 15:30:33 [http-nio-8080-exec-1] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:30:33 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:30:35 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /list.html
+2024-10-11 15:30:35 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /list.html
+2024-10-11 15:30:35 [http-nio-8080-exec-9] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:30:35 [http-nio-8080-exec-9] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:30:35 [http-nio-8080-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:30:35 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/issues?page=0&size=5
+2024-10-11 15:30:35 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/issues?page=0&size=5
+2024-10-11 15:30:35 [http-nio-8080-exec-10] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:30:35 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /favicon.ico
+2024-10-11 15:30:35 [http-nio-8080-exec-10] INFO  c.n.n.controller.IssueController - 이슈 목록 조회 요청을 받았습니다.
+2024-10-11 15:30:35 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /favicon.ico
+2024-10-11 15:30:35 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(1279956040<open>)] for JPA transaction
+2024-10-11 15:30:35 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2024-10-11 15:30:35 [http-nio-8080-exec-8] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:30:35 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@77f0b3a9]
+2024-10-11 15:30:35 [http-nio-8080-exec-8] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-10-11 15:30:35 [http-nio-8080-exec-8] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:30:35 [http-nio-8080-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:30:35 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        i1_0.id,
+        i1_0.assigned_to,
+        i1_0.created_at,
+        i1_0.description,
+        i1_0.priority_id,
+        i1_0.reported_by,
+        i1_0.resolved_at,
+        i1_0.severity_id,
+        i1_0.status,
+        i1_0.title,
+        i1_0.updated_at 
+    from
+        issues i1_0 
+    order by
+        i1_0.created_at desc 
+    limit
+        ?, ?
+2024-10-11 15:30:35 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        count(i1_0.id) 
+    from
+        issues i1_0
+2024-10-11 15:30:35 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2024-10-11 15:30:35 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(1279956040<open>)]
+2024-10-11 15:30:35 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+2024-10-11 15:30:35 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:30:35 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:30:35 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:30:35 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:30:35 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:30:35 [http-nio-8080-exec-10] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:30:35 [http-nio-8080-exec-10] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:31:23 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-11 15:31:23 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-11 15:31:23 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-10-11 15:35:39 [restartedMain] INFO  c.n.n.NetFaultTrackerApplication - Starting NetFaultTrackerApplication using Java 17.0.12 with PID 17172 (C:\김주아\업무일지\NetFaultTracker\build\classes\java\main started by nct-sjh in C:\김주아\업무일지\NetFaultTracker)
+2024-10-11 15:35:39 [restartedMain] DEBUG c.n.n.NetFaultTrackerApplication - Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-10-11 15:35:39 [restartedMain] INFO  c.n.n.NetFaultTrackerApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-11 15:35:39 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-11 15:35:39 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-11 15:35:40 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-11 15:35:40 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 73 ms. Found 2 JPA repository interfaces.
+2024-10-11 15:35:41 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-10-11 15:35:41 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-11 15:35:41 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-11 15:35:42 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-11 15:35:42 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2667 ms
+2024-10-11 15:35:42 [restartedMain] DEBUG o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2024-10-11 15:35:42 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-11 15:35:42 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-11 15:35:42 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-11 15:35:42 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-11 15:35:42 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-11 15:35:43 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@efe24c3
+2024-10-11 15:35:43 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-11 15:35:43 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-11 15:35:43 [restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5d3686df) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6359490c)
+2024-10-11 15:35:43 [restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3fe0bcea) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@20583d33)
+2024-10-11 15:35:43 [restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@49b15799) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6089668a)
+2024-10-11 15:35:43 [restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5ab4819d) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3b649e5d)
+2024-10-11 15:35:43 [restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@78aa0b37) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@533c9f9e)
+2024-10-11 15:35:43 [restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2d7a540d) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@32f3b189)
+2024-10-11 15:35:43 [restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1aa8f753) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2d5f4bf7)
+2024-10-11 15:35:43 [restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@527ab86d) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7daa3452)
+2024-10-11 15:35:43 [restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@206556db) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7732a1d3)
+2024-10-11 15:35:44 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-11 15:35:44 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-11 15:35:44 [restartedMain] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+2024-10-11 15:35:44 [restartedMain] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+2024-10-11 15:35:44 [restartedMain] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+2024-10-11 15:35:44 [restartedMain] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+2024-10-11 15:35:44 [restartedMain] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+2024-10-11 15:35:44 [restartedMain] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+2024-10-11 15:35:44 [restartedMain] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+2024-10-11 15:35:44 [restartedMain] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+2024-10-11 15:35:44 [restartedMain] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+2024-10-11 15:35:44 [restartedMain] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+2024-10-11 15:35:45 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-11 15:35:45 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userService
+2024-10-11 15:35:45 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2024-10-11 15:35:45 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2024-10-11 15:35:45 [restartedMain] DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-10-11 15:35:46 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-10-11 15:35:46 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-10-11 15:35:46 [restartedMain] INFO  c.n.n.NetFaultTrackerApplication - Started NetFaultTrackerApplication in 7.971 seconds (process running for 8.733)
+2024-10-11 15:35:56 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-11 15:35:56 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-10-11 15:35:56 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-10-11 15:35:56 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /
+2024-10-11 15:35:56 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /
+2024-10-11 15:35:56 [http-nio-8080-exec-1] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:35:56 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /index.html
+2024-10-11 15:35:56 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /index.html
+2024-10-11 15:35:56 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:35:56 [http-nio-8080-exec-1] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:35:56 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /favicon.ico
+2024-10-11 15:35:56 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /favicon.ico
+2024-10-11 15:35:56 [http-nio-8080-exec-4] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:35:56 [http-nio-8080-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-10-11 15:35:56 [http-nio-8080-exec-4] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:35:56 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:36:55 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /form.html
+2024-10-11 15:36:55 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /form.html
+2024-10-11 15:36:55 [http-nio-8080-exec-3] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:36:55 [http-nio-8080-exec-3] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:36:55 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:36:55 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /favicon.ico
+2024-10-11 15:36:55 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /favicon.ico
+2024-10-11 15:36:55 [http-nio-8080-exec-9] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:36:55 [http-nio-8080-exec-9] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-10-11 15:36:55 [http-nio-8080-exec-9] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:36:55 [http-nio-8080-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:37:04 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/issues
+2024-10-11 15:37:04 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/issues
+2024-10-11 15:37:04 [http-nio-8080-exec-6] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:37:04 [http-nio-8080-exec-6] INFO  c.n.n.controller.IssueController - 새로운 이슈 생성 요청을 받았습니다: DDos
+2024-10-11 15:37:04 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(587177422<open>)] for JPA transaction
+2024-10-11 15:37:04 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2024-10-11 15:37:04 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@109913bf]
+2024-10-11 15:37:04 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    /* insert for
+        com.netcoretech.netfaulttracker.entity.Issue */insert 
+    into
+        issues (assigned_to, created_at, description, priority_id, reported_by, resolved_at, severity_id, status, title, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-10-11 15:37:04 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2024-10-11 15:37:04 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(587177422<open>)]
+2024-10-11 15:37:04 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+2024-10-11 15:37:04 [http-nio-8080-exec-6] INFO  c.n.n.controller.IssueController - 이슈가 성공적으로 생성되었습니다: Issue(id=20, title=DDos, description=ddddd, status=IN_PROGRESS, priority=null, severity=null, reportedBy=null, assignedTo=null, createdAt=2024-10-11T15:37:04.836383, updatedAt=2024-10-11T15:37:04.836383, resolvedAt=null, comments=null)
+2024-10-11 15:37:04 [http-nio-8080-exec-6] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:37:04 [http-nio-8080-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:37:06 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /list.html
+2024-10-11 15:37:06 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured GET /list.html
+2024-10-11 15:37:06 [http-nio-8080-exec-7] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:37:06 [http-nio-8080-exec-7] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:37:06 [http-nio-8080-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:37:06 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/issues?page=0&size=5
+2024-10-11 15:37:06 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /favicon.ico
+2024-10-11 15:37:06 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /favicon.ico
+2024-10-11 15:37:06 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/issues?page=0&size=5
+2024-10-11 15:37:06 [http-nio-8080-exec-2] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:37:06 [http-nio-8080-exec-8] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:37:06 [http-nio-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-10-11 15:37:06 [http-nio-8080-exec-2] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:37:06 [http-nio-8080-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:37:06 [http-nio-8080-exec-8] INFO  c.n.n.controller.IssueController - 이슈 목록 조회 요청을 받았습니다.
+2024-10-11 15:37:06 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(1819334309<open>)] for JPA transaction
+2024-10-11 15:37:06 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2024-10-11 15:37:06 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@40e6def9]
+2024-10-11 15:37:06 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        i1_0.id,
+        i1_0.assigned_to,
+        i1_0.created_at,
+        i1_0.description,
+        i1_0.priority_id,
+        i1_0.reported_by,
+        i1_0.resolved_at,
+        i1_0.severity_id,
+        i1_0.status,
+        i1_0.title,
+        i1_0.updated_at 
+    from
+        issues i1_0 
+    order by
+        i1_0.created_at desc 
+    limit
+        ?, ?
+2024-10-11 15:37:06 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        count(i1_0.id) 
+    from
+        issues i1_0
+2024-10-11 15:37:06 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2024-10-11 15:37:06 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(1819334309<open>)]
+2024-10-11 15:37:06 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+2024-10-11 15:37:06 [http-nio-8080-exec-8] WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2024-10-11 15:37:06 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:37:06 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:37:06 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:37:06 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:37:06 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:37:06 [http-nio-8080-exec-8] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:37:06 [http-nio-8080-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:37:07 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing DELETE /api/issues/20
+2024-10-11 15:37:07 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured DELETE /api/issues/20
+2024-10-11 15:37:07 [http-nio-8080-exec-10] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:37:07 [http-nio-8080-exec-10] INFO  c.n.n.controller.IssueController - ID '20'인 이슈 삭제 요청을 받았습니다.
+2024-10-11 15:37:07 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(1065266102<open>)] for JPA transaction
+2024-10-11 15:37:07 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2024-10-11 15:37:07 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@538a5d04]
+2024-10-11 15:37:07 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        i1_0.id,
+        at1_0.id,
+        at1_0.email,
+        at1_0.password,
+        at1_0.role,
+        at1_0.username,
+        i1_0.created_at,
+        i1_0.description,
+        p1_0.id,
+        p1_0.description,
+        p1_0.name,
+        rb1_0.id,
+        rb1_0.email,
+        rb1_0.password,
+        rb1_0.role,
+        rb1_0.username,
+        i1_0.resolved_at,
+        s1_0.id,
+        s1_0.description,
+        s1_0.name,
+        i1_0.status,
+        i1_0.title,
+        i1_0.updated_at 
+    from
+        issues i1_0 
+    left join
+        users at1_0 
+            on at1_0.id=i1_0.assigned_to 
+    left join
+        priorities p1_0 
+            on p1_0.id=i1_0.priority_id 
+    left join
+        users rb1_0 
+            on rb1_0.id=i1_0.reported_by 
+    left join
+        severities s1_0 
+            on s1_0.id=i1_0.severity_id 
+    where
+        i1_0.id=?
+2024-10-11 15:37:07 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2024-10-11 15:37:07 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(1065266102<open>)]
+2024-10-11 15:37:07 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+2024-10-11 15:37:07 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(1065266102<open>)] for JPA transaction
+2024-10-11 15:37:07 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.delete]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2024-10-11 15:37:07 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@224612d9]
+2024-10-11 15:37:07 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:37:07 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2024-10-11 15:37:07 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(1065266102<open>)]
+2024-10-11 15:37:07 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    /* delete for com.netcoretech.netfaulttracker.entity.Issue */delete 
+    from
+        issues 
+    where
+        id=?
+2024-10-11 15:37:07 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+2024-10-11 15:37:07 [http-nio-8080-exec-10] INFO  c.n.n.service.IssueService - 이슈(ID: 20)가 성공적으로 삭제되었습니다.
+2024-10-11 15:37:07 [http-nio-8080-exec-10] INFO  c.n.n.controller.IssueController - 이슈가 성공적으로 삭제되었습니다: 20
+2024-10-11 15:37:07 [http-nio-8080-exec-10] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:37:07 [http-nio-8080-exec-10] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:37:08 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/issues?page=0&size=5
+2024-10-11 15:37:08 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/issues?page=0&size=5
+2024-10-11 15:37:08 [http-nio-8080-exec-1] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:37:08 [http-nio-8080-exec-1] INFO  c.n.n.controller.IssueController - 이슈 목록 조회 요청을 받았습니다.
+2024-10-11 15:37:08 [http-nio-8080-exec-1] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(1181326472<open>)] for JPA transaction
+2024-10-11 15:37:08 [http-nio-8080-exec-1] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2024-10-11 15:37:08 [http-nio-8080-exec-1] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@290f75a3]
+2024-10-11 15:37:08 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        i1_0.id,
+        i1_0.assigned_to,
+        i1_0.created_at,
+        i1_0.description,
+        i1_0.priority_id,
+        i1_0.reported_by,
+        i1_0.resolved_at,
+        i1_0.severity_id,
+        i1_0.status,
+        i1_0.title,
+        i1_0.updated_at 
+    from
+        issues i1_0 
+    order by
+        i1_0.created_at desc 
+    limit
+        ?, ?
+2024-10-11 15:37:08 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        count(i1_0.id) 
+    from
+        issues i1_0
+2024-10-11 15:37:08 [http-nio-8080-exec-1] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2024-10-11 15:37:08 [http-nio-8080-exec-1] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(1181326472<open>)]
+2024-10-11 15:37:08 [http-nio-8080-exec-1] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+2024-10-11 15:37:08 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:37:08 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:37:08 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:37:08 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:37:08 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:37:08 [http-nio-8080-exec-1] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:37:08 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:37:09 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /view.html?id=19
+2024-10-11 15:37:09 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /view.html?id=19
+2024-10-11 15:37:09 [http-nio-8080-exec-4] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:37:09 [http-nio-8080-exec-4] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:37:09 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:37:09 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/issues/19
+2024-10-11 15:37:09 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/issues/19
+2024-10-11 15:37:09 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /favicon.ico
+2024-10-11 15:37:09 [http-nio-8080-exec-3] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:37:09 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /favicon.ico
+2024-10-11 15:37:09 [http-nio-8080-exec-3] INFO  c.n.n.controller.IssueController - ID가 19인 이슈 조회 요청을 받았습니다.
+2024-10-11 15:37:09 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(1587495669<open>)] for JPA transaction
+2024-10-11 15:37:09 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2024-10-11 15:37:09 [http-nio-8080-exec-9] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:37:09 [http-nio-8080-exec-9] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-10-11 15:37:09 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@2acc3e02]
+2024-10-11 15:37:09 [http-nio-8080-exec-9] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:37:09 [http-nio-8080-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:37:09 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        i1_0.id,
+        at1_0.id,
+        at1_0.email,
+        at1_0.password,
+        at1_0.role,
+        at1_0.username,
+        i1_0.created_at,
+        i1_0.description,
+        p1_0.id,
+        p1_0.description,
+        p1_0.name,
+        rb1_0.id,
+        rb1_0.email,
+        rb1_0.password,
+        rb1_0.role,
+        rb1_0.username,
+        i1_0.resolved_at,
+        s1_0.id,
+        s1_0.description,
+        s1_0.name,
+        i1_0.status,
+        i1_0.title,
+        i1_0.updated_at 
+    from
+        issues i1_0 
+    left join
+        users at1_0 
+            on at1_0.id=i1_0.assigned_to 
+    left join
+        priorities p1_0 
+            on p1_0.id=i1_0.priority_id 
+    left join
+        users rb1_0 
+            on rb1_0.id=i1_0.reported_by 
+    left join
+        severities s1_0 
+            on s1_0.id=i1_0.severity_id 
+    where
+        i1_0.id=?
+2024-10-11 15:37:09 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2024-10-11 15:37:09 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(1587495669<open>)]
+2024-10-11 15:37:09 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+2024-10-11 15:37:09 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:37:09 [http-nio-8080-exec-3] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:37:09 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:37:11 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /form.html?id=19
+2024-10-11 15:37:11 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /form.html?id=19
+2024-10-11 15:37:11 [http-nio-8080-exec-5] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:37:11 [http-nio-8080-exec-5] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:37:11 [http-nio-8080-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:37:11 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/issues/19
+2024-10-11 15:37:11 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /favicon.ico
+2024-10-11 15:37:11 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/issues/19
+2024-10-11 15:37:11 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured GET /favicon.ico
+2024-10-11 15:37:11 [http-nio-8080-exec-6] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:37:11 [http-nio-8080-exec-6] INFO  c.n.n.controller.IssueController - ID가 19인 이슈 조회 요청을 받았습니다.
+2024-10-11 15:37:11 [http-nio-8080-exec-7] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:37:11 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(569691206<open>)] for JPA transaction
+2024-10-11 15:37:11 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2024-10-11 15:37:11 [http-nio-8080-exec-7] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-10-11 15:37:11 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@1143ca45]
+2024-10-11 15:37:11 [http-nio-8080-exec-7] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:37:11 [http-nio-8080-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:37:11 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        i1_0.id,
+        at1_0.id,
+        at1_0.email,
+        at1_0.password,
+        at1_0.role,
+        at1_0.username,
+        i1_0.created_at,
+        i1_0.description,
+        p1_0.id,
+        p1_0.description,
+        p1_0.name,
+        rb1_0.id,
+        rb1_0.email,
+        rb1_0.password,
+        rb1_0.role,
+        rb1_0.username,
+        i1_0.resolved_at,
+        s1_0.id,
+        s1_0.description,
+        s1_0.name,
+        i1_0.status,
+        i1_0.title,
+        i1_0.updated_at 
+    from
+        issues i1_0 
+    left join
+        users at1_0 
+            on at1_0.id=i1_0.assigned_to 
+    left join
+        priorities p1_0 
+            on p1_0.id=i1_0.priority_id 
+    left join
+        users rb1_0 
+            on rb1_0.id=i1_0.reported_by 
+    left join
+        severities s1_0 
+            on s1_0.id=i1_0.severity_id 
+    where
+        i1_0.id=?
+2024-10-11 15:37:11 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2024-10-11 15:37:11 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(569691206<open>)]
+2024-10-11 15:37:11 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+2024-10-11 15:37:11 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:37:11 [http-nio-8080-exec-6] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:37:11 [http-nio-8080-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:37:26 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing PUT /api/issues/19
+2024-10-11 15:37:26 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured PUT /api/issues/19
+2024-10-11 15:37:26 [http-nio-8080-exec-2] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:37:26 [http-nio-8080-exec-2] INFO  c.n.n.controller.IssueController - ID '19'으로 이슈 수정 요청을 받았습니다.
+2024-10-11 15:37:26 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(571692105<open>)] for JPA transaction
+2024-10-11 15:37:26 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2024-10-11 15:37:26 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@55866d51]
+2024-10-11 15:37:26 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        i1_0.id,
+        at1_0.id,
+        at1_0.email,
+        at1_0.password,
+        at1_0.role,
+        at1_0.username,
+        i1_0.created_at,
+        i1_0.description,
+        p1_0.id,
+        p1_0.description,
+        p1_0.name,
+        rb1_0.id,
+        rb1_0.email,
+        rb1_0.password,
+        rb1_0.role,
+        rb1_0.username,
+        i1_0.resolved_at,
+        s1_0.id,
+        s1_0.description,
+        s1_0.name,
+        i1_0.status,
+        i1_0.title,
+        i1_0.updated_at 
+    from
+        issues i1_0 
+    left join
+        users at1_0 
+            on at1_0.id=i1_0.assigned_to 
+    left join
+        priorities p1_0 
+            on p1_0.id=i1_0.priority_id 
+    left join
+        users rb1_0 
+            on rb1_0.id=i1_0.reported_by 
+    left join
+        severities s1_0 
+            on s1_0.id=i1_0.severity_id 
+    where
+        i1_0.id=?
+2024-10-11 15:37:26 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2024-10-11 15:37:26 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(571692105<open>)]
+2024-10-11 15:37:26 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+2024-10-11 15:37:26 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(571692105<open>)] for JPA transaction
+2024-10-11 15:37:26 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2024-10-11 15:37:26 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@e38d95c]
+2024-10-11 15:37:26 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2024-10-11 15:37:26 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(571692105<open>)]
+2024-10-11 15:37:26 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+2024-10-11 15:37:26 [http-nio-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.transaction.TransactionSystemException: Could not commit JPA transaction]
+2024-10-11 15:37:26 [http-nio-8080-exec-2] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:37:26 [http-nio-8080-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:37:43 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing PUT /api/issues/19
+2024-10-11 15:37:43 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured PUT /api/issues/19
+2024-10-11 15:37:43 [http-nio-8080-exec-8] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:37:43 [http-nio-8080-exec-8] INFO  c.n.n.controller.IssueController - ID '19'으로 이슈 수정 요청을 받았습니다.
+2024-10-11 15:37:43 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(237231643<open>)] for JPA transaction
+2024-10-11 15:37:43 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2024-10-11 15:37:43 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@3c69cc2d]
+2024-10-11 15:37:43 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        i1_0.id,
+        at1_0.id,
+        at1_0.email,
+        at1_0.password,
+        at1_0.role,
+        at1_0.username,
+        i1_0.created_at,
+        i1_0.description,
+        p1_0.id,
+        p1_0.description,
+        p1_0.name,
+        rb1_0.id,
+        rb1_0.email,
+        rb1_0.password,
+        rb1_0.role,
+        rb1_0.username,
+        i1_0.resolved_at,
+        s1_0.id,
+        s1_0.description,
+        s1_0.name,
+        i1_0.status,
+        i1_0.title,
+        i1_0.updated_at 
+    from
+        issues i1_0 
+    left join
+        users at1_0 
+            on at1_0.id=i1_0.assigned_to 
+    left join
+        priorities p1_0 
+            on p1_0.id=i1_0.priority_id 
+    left join
+        users rb1_0 
+            on rb1_0.id=i1_0.reported_by 
+    left join
+        severities s1_0 
+            on s1_0.id=i1_0.severity_id 
+    where
+        i1_0.id=?
+2024-10-11 15:37:43 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2024-10-11 15:37:43 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(237231643<open>)]
+2024-10-11 15:37:43 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+2024-10-11 15:37:43 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(237231643<open>)] for JPA transaction
+2024-10-11 15:37:43 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2024-10-11 15:37:43 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@56b40fb2]
+2024-10-11 15:37:43 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2024-10-11 15:37:43 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(237231643<open>)]
+2024-10-11 15:37:43 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    /* update
+        for com.netcoretech.netfaulttracker.entity.Issue */update issues 
+    set
+        assigned_to=?,
+        description=?,
+        priority_id=?,
+        reported_by=?,
+        resolved_at=?,
+        severity_id=?,
+        status=?,
+        title=?,
+        updated_at=? 
+    where
+        id=?
+2024-10-11 15:37:43 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+2024-10-11 15:37:43 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:37:43 [http-nio-8080-exec-8] INFO  c.n.n.controller.IssueController - 이슈가 성공적으로 수정되었습니다: Issue(id=19, title=asdf, description=dddd, status=OPEN, priority=null, severity=null, reportedBy=null, assignedTo=null, createdAt=2024-10-11T15:30:34, updatedAt=2024-10-11T15:37:43.960316, resolvedAt=null, comments=[])
+2024-10-11 15:37:43 [http-nio-8080-exec-8] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:37:43 [http-nio-8080-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:37:45 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /list.html
+2024-10-11 15:37:45 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured GET /list.html
+2024-10-11 15:37:45 [http-nio-8080-exec-10] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:37:45 [http-nio-8080-exec-10] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:37:45 [http-nio-8080-exec-10] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:37:45 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/issues?page=0&size=5
+2024-10-11 15:37:45 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/issues?page=0&size=5
+2024-10-11 15:37:45 [http-nio-8080-exec-1] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:37:45 [http-nio-8080-exec-1] INFO  c.n.n.controller.IssueController - 이슈 목록 조회 요청을 받았습니다.
+2024-10-11 15:37:45 [http-nio-8080-exec-1] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(862851998<open>)] for JPA transaction
+2024-10-11 15:37:45 [http-nio-8080-exec-1] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2024-10-11 15:37:45 [http-nio-8080-exec-1] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@6b7c48e5]
+2024-10-11 15:37:45 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        i1_0.id,
+        i1_0.assigned_to,
+        i1_0.created_at,
+        i1_0.description,
+        i1_0.priority_id,
+        i1_0.reported_by,
+        i1_0.resolved_at,
+        i1_0.severity_id,
+        i1_0.status,
+        i1_0.title,
+        i1_0.updated_at 
+    from
+        issues i1_0 
+    order by
+        i1_0.created_at desc 
+    limit
+        ?, ?
+2024-10-11 15:37:45 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        count(i1_0.id) 
+    from
+        issues i1_0
+2024-10-11 15:37:45 [http-nio-8080-exec-1] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2024-10-11 15:37:45 [http-nio-8080-exec-1] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(862851998<open>)]
+2024-10-11 15:37:45 [http-nio-8080-exec-1] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+2024-10-11 15:37:45 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:37:45 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /favicon.ico
+2024-10-11 15:37:45 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /favicon.ico
+2024-10-11 15:37:45 [http-nio-8080-exec-4] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:37:45 [http-nio-8080-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-10-11 15:37:45 [http-nio-8080-exec-4] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:37:45 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:37:45 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:37:45 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:37:45 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:37:45 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.issue_id,
+        c1_0.id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        comments c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.issue_id=?
+2024-10-11 15:37:45 [http-nio-8080-exec-1] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2024-10-11 15:37:45 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-11 15:37:57 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-11 15:37:57 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-11 15:37:57 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
