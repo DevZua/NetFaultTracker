@@ -2,7 +2,8 @@ package com.netcoretech.netfaulttracker.service;
 
 import com.netcoretech.netfaulttracker.entity.Issue;
 import com.netcoretech.netfaulttracker.repository.IssueRepository;
-import org.apache.logging.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.data.domain.Page;
@@ -13,12 +14,11 @@ import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
-
 @Service
 public class IssueService {
 
+    private static final Logger logger = LoggerFactory.getLogger(IssueService.class);
     private final IssueRepository issueRepository;
-    private Logger logger;
 
     @Autowired
     public IssueService(IssueRepository issueRepository) {
@@ -26,7 +26,6 @@ public class IssueService {
     }
 
     public Page<Issue> getAllIssues(Pageable pageable) {
-        // 최신순 정렬
         Pageable sortedByCreatedAtDesc = PageRequest.of(pageable.getPageNumber(), pageable.getPageSize(), Sort.by("createdAt").descending());
         return issueRepository.findAll(sortedByCreatedAtDesc);
     }
@@ -44,16 +43,20 @@ public class IssueService {
     }
 
     public void deleteIssue(Long id) {
-        try {
-            issueRepository.deleteById(id);  // 존재 여부에 상관없이 삭제 시도
-        } catch (EmptyResultDataAccessException e) {
+        issueRepository.findById(id).ifPresentOrElse(issue -> {
+            // 이슈 삭제 시 연관된 엔티티도 삭제
+            issueRepository.delete(issue);
+            logger.info("이슈(ID: {})가 성공적으로 삭제되었습니다.", id);
+        }, () -> {
             throw new EmptyResultDataAccessException("삭제할 이슈가 존재하지 않습니다. ID: " + id, 1);
-        }
+        });
     }
 
 
     public Page<Issue> searchIssues(String keyword, Pageable pageable) {
-        // 검색 결과를 최신순으로 정렬
+        if (keyword == null || keyword.trim().isEmpty()) {
+            keyword = ""; // 기본값 설정
+        }
         Pageable sortedByCreatedAtDesc = PageRequest.of(pageable.getPageNumber(), pageable.getPageSize(), Sort.by("createdAt").descending());
         return issueRepository.searchIssues(keyword, sortedByCreatedAtDesc);
     }

@@ -59,11 +59,9 @@
             margin-top: 10px;
             display: flex;
             justify-content: flex-end;
-            align-items: center;
             gap: 10px;
         }
         .btn-create {
-            margin-bottom: 20px;
             background-color: #87CEEB;
             color: white;
         }
@@ -88,14 +86,10 @@
 <main class="container">
     <div class="content">
         <h2>이슈 목록</h2>
-
-        <!-- 이슈 생성 버튼 추가 -->
         <div class="text-right">
             <a href="form.html" class="btn btn-create">이슈 생성</a>
         </div>
-
         <div class="issue-list" id="issueList"></div>
-        <!-- 페이지네이션 버튼 -->
         <div class="pagination" id="pagination"></div>
     </div>
 </main>
@@ -103,37 +97,63 @@
     <p>© 2024 NCT ZUA</p>
 </footer>
 
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script>
     let currentPage = 0;
-    const pageSize = 5;  // 한 페이지당 5개의 이슈를 보여줌
+    const pageSize = 5;
 
-    // 페이지 데이터를 불러오는 함수
+    // 쿠키에서 CSRF 토큰 가져오는 함수
+    function getCsrfTokenFromCookie() {
+        const csrfCookie = document.cookie.split(';').find(cookie => cookie.trim().startsWith('XSRF-TOKEN='));
+        return csrfCookie ? csrfCookie.split('=')[1] : null;
+    }
+
     function loadIssues(page = 0) {
-        fetch(`/api/issues?page=${page}&size=${pageSize}`)
-            .then(response => response.json())
-            .then(issues => {
+        currentPage = page;
+        const csrfToken = getCsrfTokenFromCookie();  // CSRF 토큰을 쿠키에서 가져옴
+
+        fetch(`/api/issues?page=${page}&size=${pageSize}`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-XSRF-TOKEN': csrfToken  // CSRF 토큰 헤더에 포함
+            }
+        })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('API 호출 실패');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('API 응답 데이터:', data);  // 데이터 출력
+
                 const issueList = document.getElementById('issueList');
-                issueList.innerHTML = '';  // 기존 목록을 초기화
-                issues.content.forEach(issue => {
-                    const issueItem = document.createElement('div');
-                    issueItem.classList.add('issue-item');
-                    issueItem.innerHTML = `
-                        <strong>제목:</strong> ${issue.title} <br>
-                        <strong>상태:</strong> ${issue.status} <br>
+                issueList.innerHTML = '';
+
+                if (data && data.content && data.content.length > 0) {
+                    data.content.forEach(issue => {
+                        const issueItem = document.createElement('div');
+                        issueItem.classList.add('issue-item');
+                        issueItem.innerHTML = `
+                        <div class="issue-content">
+                            <strong>제목:</strong> ${issue.title} <br>
+                            <strong>상태:</strong> ${issue.status}
+                        </div>
                         <div class="issue-actions">
                             <button class="btn btn-warning" onclick="editIssue(${issue.id})">수정</button>
                             <button class="btn btn-danger" onclick="deleteIssue(${issue.id})">삭제</button>
                         </div>
                     `;
-                    issueItem.addEventListener('click', (event) => {
-                        // 버튼 클릭 시 상세 페이지로 이동하지 않도록 함
-                        if (!event.target.classList.contains('btn')) {
-                            window.location.href = `view.html?id=${issue.id}`;
-                        }
+                        issueItem.querySelector('.issue-content').addEventListener('click', () => {
+                            window.location.href = `view.html?id=${issue.id}`;  // view.html로 이동
+                        });
+                        issueList.appendChild(issueItem);
                     });
-                    issueList.appendChild(issueItem);
-                });
-                renderPagination(issues.totalPages);
+                    renderPagination(data.totalPages);
+                } else {
+                    issueList.innerHTML = '<p>이슈가 없습니다.</p>';  // 데이터가 없을 경우
+                }
             })
             .catch(error => {
                 console.error('Error:', error);
@@ -141,49 +161,50 @@
             });
     }
 
-    // 페이지네이션 버튼을 렌더링하는 함수
     function renderPagination(totalPages) {
         const pagination = document.getElementById('pagination');
-        pagination.innerHTML = '';  // 기존 페이지네이션 초기화
+        pagination.innerHTML = '';
         for (let i = 0; i < totalPages; i++) {
             const pageLink = document.createElement('span');
             pageLink.classList.add('page-link');
             pageLink.innerText = i + 1;
-            pageLink.onclick = () => loadIssues(i);  // 클릭 시 해당 페이지로 이동
+            pageLink.onclick = () => loadIssues(i);
             if (i === currentPage) {
-                pageLink.style.fontWeight = 'bold';  // 현재 페이지 표시
+                pageLink.style.fontWeight = 'bold';
             }
             pagination.appendChild(pageLink);
         }
     }
 
-    // 초기 페이지 로드
-    document.addEventListener('DOMContentLoaded', function() {
-        loadIssues();
-    });
-
-    function editIssue(id) {
-        window.location.href = `form.html?id=${id}`;
-    }
-
     function deleteIssue(id) {
-        // 바로 삭제 처리
+        const csrfToken = getCsrfTokenFromCookie();  // 쿠키에서 CSRF 토큰 가져오기
+
         fetch(`/api/issues/${id}`, {
-            method: 'DELETE'
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-XSRF-TOKEN': csrfToken  // CSRF 토큰 헤더에 포함
+            }
         })
             .then(response => {
                 if (response.ok) {
-                    // 삭제 후 현재 페이지 새로고침
-                    loadIssues(currentPage);
+                    alert('이슈가 삭제되었습니다.');
+                    loadIssues(currentPage);  // 삭제 후 목록 새로고침
                 } else {
-                    throw new Error('이슈 삭제에 실패했습니다.');
+                    throw new Error('삭제 실패');
                 }
             })
             .catch(error => {
-                console.error('삭제 중 오류:', error);
-                alert(error.message);
+                console.error('Error:', error);
+                alert('이슈 삭제에 실패했습니다.');
             });
     }
+
+    function editIssue(id) {
+        window.location.href = `view.html?id=${id}`;  // view.html로 수정 페이지로 이동
+    }
+
+    document.addEventListener('DOMContentLoaded', () => loadIssues());
 </script>
 </body>
 </html>

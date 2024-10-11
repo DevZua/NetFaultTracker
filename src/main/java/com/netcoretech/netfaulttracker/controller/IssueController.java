@@ -52,7 +52,7 @@ public class IssueController {
         logger.info("새로운 이슈 생성 요청을 받았습니다: {}", newIssue.getTitle());
         Issue createdIssue = issueService.createIssue(newIssue);
         logger.info("이슈가 성공적으로 생성되었습니다: {}", createdIssue);
-        return ResponseEntity.ok(createdIssue);
+        return ResponseEntity.status(HttpStatus.CREATED).body(createdIssue);
     }
 
     @PutMapping("/{id}")
@@ -76,23 +76,17 @@ public class IssueController {
         }
     }
 
-
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteIssueById(@PathVariable Long id) {
         logger.info("ID '{}'인 이슈 삭제 요청을 받았습니다.", id);
 
         try {
-            issueService.deleteIssue(id);  // ID를 찾아서 삭제 시도
+            issueService.deleteIssue(id);
             logger.info("이슈가 성공적으로 삭제되었습니다: {}", id);
-            return ResponseEntity.ok().build();  // 성공 시 200 응답
+            return ResponseEntity.noContent().build(); // 204 No Content 반환
         } catch (EmptyResultDataAccessException e) {
-            logger.warn("ID '{}'에 해당하는 이슈가 존재하지 않아 삭제할 수 없습니다.", id);
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();  // 404 에러 반환
-        } catch (Exception e) {
-            logger.error("이슈 삭제 중 오류가 발생했습니다: {}", e.getMessage());
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build(); // 기타 에러 처리
+            logger.warn("ID '{}'에 해당하는 이슈를 찾을 수 없어 삭제할 수 없습니다.", id);
+            return ResponseEntity.notFound().build(); // 404 Not Found 반환
         }
     }
-
-
 }

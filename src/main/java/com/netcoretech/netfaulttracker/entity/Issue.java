@@ -36,19 +36,19 @@ public class Issue {
     private Status status;
 
     @ManyToOne
-    @JoinColumn(name = "priority_id")
+    @JoinColumn(name = "priority_id", nullable = true) // nullable 설정 명시적으로 지정
     private Priority priority;
 
     @ManyToOne
-    @JoinColumn(name = "severity_id")
+    @JoinColumn(name = "severity_id", nullable = true) // nullable 설정 명시적으로 지정
     private Severity severity;
 
     @ManyToOne
-    @JoinColumn(name = "reported_by")
+    @JoinColumn(name = "reported_by", nullable = true) // nullable 설정 명시적으로 지정
     private User reportedBy;
 
     @ManyToOne
-    @JoinColumn(name = "assigned_to")
+    @JoinColumn(name = "assigned_to", nullable = true) // nullable 설정 명시적으로 지정
     private User assignedTo;
 
     @CreationTimestamp
@@ -62,8 +62,9 @@ public class Issue {
     @Column(name = "resolved_at")
     private LocalDateTime resolvedAt;
 
-    @OneToMany(mappedBy = "issue", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "issue", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     private List<Comment> comments;
+
 
     public enum Status {
         OPEN("접수"), IN_PROGRESS("처리중"), RESOLVED("해결됨"), CLOSED("종료");
