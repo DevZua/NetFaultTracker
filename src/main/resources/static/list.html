@@ -136,7 +136,7 @@
                         const issueItem = document.createElement('div');
                         issueItem.classList.add('issue-item');
                         issueItem.innerHTML = `
-                        <div class="issue-content">
+                        <div class="issue-content" onclick="window.location.href='view.html?id=${issue.id}'">
                             <strong>제목:</strong> ${issue.title} <br>
                             <strong>상태:</strong> ${issue.status}
                         </div>
@@ -145,9 +145,6 @@
                             <button class="btn btn-danger" onclick="deleteIssue(${issue.id})">삭제</button>
                         </div>
                     `;
-                        issueItem.querySelector('.issue-content').addEventListener('click', () => {
-                            window.location.href = `view.html?id=${issue.id}`;  // view.html로 이동
-                        });
                         issueList.appendChild(issueItem);
                     });
                     renderPagination(data.totalPages);
